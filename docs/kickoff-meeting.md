@@ -114,6 +114,7 @@ Current input:
 - Analytics: include readiness for GA4, GTM, and future scripts in v1.
 - Resume access: include in nav and build a dedicated resume page with its own sections and animations, without embedding the PDF in-page.
 - Project hierarchy: all 6 projects matter, but the strongest ones can be placed higher or receive stronger visual emphasis.
+- Provisional technical recommendation approved for planning: Next.js frontend, headless WordPress with ACF, core REST API first, Hostinger-compatible deployment, and a clean GA4/GTM-ready integration point.
 
 ### 6. Content Strategy
 
@@ -123,6 +124,12 @@ Current input:
 - Resume support strategy
 - SEO priorities
 - Source material gaps that need owner input
+
+Current input:
+
+- Testimonials target for v1: 3 real approved testimonials.
+- Copy direction: start fresh rather than preserving the current site's wording.
+- Messaging should be tuned primarily toward Senior Frontend Developer, WordPress Developer, Web Development Manager, and Digital Strategy opportunities.
 
 ### 7. Delivery Model
 
@@ -165,13 +172,10 @@ Current input:
 
 ## Open Questions
 
-- Which frontend stack do we want to recommend first for approval?
 - Do we want to optimize primarily for recruiter review, freelance/client trust, or both?
-- How many testimonials are available and strong enough to include in v1?
 - Should all 6 projects be equally prominent, or should a smaller set be featured first with the rest secondary?
 - Should the first release include analytics and event tracking, or defer that?
-- Should we preserve any wording or structure from the current site, or start fresh?
-- Are there specific companies or role types the copy should be tuned toward?
+- Are there any company types or industries that should receive stronger emphasis inside the copy?
 
 ## Expected Outputs
 
