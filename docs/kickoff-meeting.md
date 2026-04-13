@@ -33,6 +33,7 @@ Align the Project Manager, Designer, Content Writer, Developer, and owner on the
 - Performance is a standing requirement, including strong Core Web Vitals.
 - `Advanced Custom Fields` is the default content-modeling direction unless another approved option is chosen.
 - Content should support organic search and avoid obvious AI-generated tone.
+- Target positioning should support frontend, WordPress-adjacent, lead, manager, and digital strategy opportunities where credible.
 
 ## Kickoff Goals
 
@@ -59,6 +60,14 @@ Align the Project Manager, Designer, Content Writer, Developer, and owner on the
 - Secondary roles to target
 - What recruiters and hiring managers should understand within the first screen
 - What differentiates Erick from similar candidates
+
+Current input:
+
+- Primary roles: Frontend Developer, Senior Frontend Developer, WordPress Developer, Web Developer, Headless WordPress / Frontend hybrid.
+- Secondary roles: Lead or Manager positions in web development, plus digital strategy opportunities where relevant.
+- First-screen takeaway: Erick has worked in-house, at agencies, and across small-business through enterprise environments, with experience spanning integrations, strategy, and development.
+- Differentiators to emphasize: full-site ownership, webmaster-style breadth, technical implementation, integrations, and the ability to operate across company sizes.
+- Primary audience focus: recruiters and hiring managers.
 
 ### 3. Scope For V1
 

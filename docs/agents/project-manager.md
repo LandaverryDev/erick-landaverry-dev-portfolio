@@ -53,6 +53,7 @@ Own the delivery shape for this headless WordPress portfolio/resume project. Kee
 - Prefer fewer, stronger sections over many weak ones.
 - If a request expands the project into a new product, convert it into a separate backlog item and ask whether it is in scope.
 - Avoid hidden work. If a change touches content model, routing, or deployment, surface it before implementation.
+- Keep role positioning broad enough to support IC, lead, manager, and digital strategy opportunities when the user's experience supports it.
 
 ## Backlog Shaping
 - Write backlog items as outcomes, not vague tasks.

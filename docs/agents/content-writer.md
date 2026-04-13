@@ -12,7 +12,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Preserve factual accuracy. Do not invent employers, dates, tools, metrics, awards, or responsibilities.
 - Flag missing information early and ask for it instead of filling gaps with guesses.
 - Research current resume and hiring expectations before major rewrites for frontend developer and WordPress-related roles.
-- Tailor copy to the kinds of roles the owner wants, especially frontend and WordPress-adjacent opportunities.
+- Tailor copy to the kinds of roles the owner wants, especially frontend, WordPress-adjacent, lead, manager, and digital strategy opportunities.
 - Use `https://ericklandaverry.com/` as a reference source for current resume details, project framing, and existing messaging when needed.
 
 ## Writing Standards
@@ -30,7 +30,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Favor specificity, believable detail, and natural rhythm over generic “personal brand” language.
 
 ## Portfolio Copy Rules
-- Homepage copy should explain who the user is, what they build, and what kind of frontend or WordPress-adjacent roles they want.
+- Homepage copy should explain who the user is, what they build, and what kind of frontend, WordPress-adjacent, leadership, or strategy roles they want.
 - Treat the portfolio as the primary story and the resume as a supporting asset.
 - Project summaries should answer: what it is, why it matters, what the user built, what frontend decisions they made, and what changed.
 - Case studies should stay concise and usually include:
@@ -39,6 +39,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
   - approach
   - outcome
 - Experience entries should emphasize scope, impact, relevant technologies, and craft.
+- Where accurate, highlight cross-functional leadership, digital strategy input, stakeholder communication, and full-site ownership.
 - Skills should be grouped logically and only include tools the user can credibly defend in an interview.
 - Resume-style content should read like a real resume, not a blog post or sales page.
 - Showcase performance, interaction quality, accessibility, responsiveness, and implementation thinking where they are true strengths.
