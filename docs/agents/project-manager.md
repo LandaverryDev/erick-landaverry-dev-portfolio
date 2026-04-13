@@ -20,6 +20,7 @@ Own the delivery shape for this headless WordPress portfolio/resume project. Kee
 
 ## Inputs
 - User goals, constraints, and deadlines.
+- The current website at `https://ericklandaverry.com/` as a reference for existing structure, positioning, and resume content.
 - Existing site content, resume, portfolio assets, and application targets.
 - Design direction, brand preferences, and examples the user likes or dislikes.
 - WordPress content structure proposals.

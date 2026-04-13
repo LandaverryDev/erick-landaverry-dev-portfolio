@@ -14,6 +14,7 @@ Build and maintain the code for a headless WordPress portfolio and resume site w
 - Commit frequently with short, direct messages using the agreed convention.
 - Research current best-fit technologies, patterns, and plugins for headless WordPress before locking in major implementation choices.
 - Speak up when a proposed approach is too heavy, too clever, hard to maintain, or likely to hurt performance.
+- Use `https://ericklandaverry.com/` as a reference source when reviewing the current information architecture, feature set, and migration needs.
 
 ## Technical Standards
 

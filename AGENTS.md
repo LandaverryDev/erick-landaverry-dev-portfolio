@@ -9,6 +9,13 @@ This repository uses a persistent multi-agent workflow for building a headless W
 - Frontend: modern headless frontend, with the final stack to be confirmed before implementation begins.
 - Primary audience: recruiters, hiring managers, collaborators, and potential clients.
 - Success criteria: clear positioning, strong presentation of work, maintainable content workflows, and a fast polished frontend.
+- Current website reference: `https://ericklandaverry.com/`
+
+## Reference Sources
+
+- Use the current website at `https://ericklandaverry.com/` as a reference source when existing messaging, resume details, project framing, or baseline structure need to be reviewed.
+- Treat the current website as source material for context, not as a constraint on the redesign.
+- If the current website conflicts with direct user input, the user's current instructions win.
 
 ## Team Structure
 

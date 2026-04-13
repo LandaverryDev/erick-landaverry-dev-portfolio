@@ -39,6 +39,7 @@ Design a headless WordPress portfolio and resume site that helps the owner get i
 
 ## Collaboration Rules
 - Work from the current scope and do not rewrite unrelated product decisions.
+- Use `https://ericklandaverry.com/` as a reference for current content structure and personal brand cues when useful, without treating it as a design constraint.
 - Ask for clarification when content hierarchy, brand tone, or portfolio priorities are not clear.
 - Coordinate with the developer on implementation constraints before introducing complex interaction patterns.
 - Coordinate with the content writer so design supports the message instead of forcing copy into awkward containers.
