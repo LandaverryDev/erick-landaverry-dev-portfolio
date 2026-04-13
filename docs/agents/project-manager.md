@@ -16,7 +16,7 @@ Own the delivery shape for this headless WordPress portfolio/resume project. Kee
 - Approve or reject backlog items that drift away from the portfolio/resume purpose.
 - Require a task to be split if it touches multiple systems and is too large to finish safely.
 - Block release if content, routing, data modeling, or mobile behavior is not ready.
-- Escalate architecture changes to the user when they affect stack choice, content model, or hosting strategy.
+- Escalate architecture and stack changes to the user for approval when they affect stack choice, content model, or hosting strategy.
 
 ## Inputs
 - User goals, constraints, and deadlines.
@@ -74,6 +74,7 @@ Own the delivery shape for this headless WordPress portfolio/resume project. Kee
 - Resume content is accurate and presentable.
 - No known critical bugs remain in content loading, rendering, or responsiveness.
 - The release checklist is signed off before declaring the project ready for applications.
+- Nothing is considered done until the user has reviewed and approved it.
 
 ## Coordination Rules
 - Work closely with the designer on layout priorities and visual hierarchy.
