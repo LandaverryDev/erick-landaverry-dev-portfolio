@@ -23,11 +23,17 @@ Why this title:
 
 ## Approved Homepage Positioning
 
-Use this as the working positioning sentence:
+Use this as the approved working homepage direction:
+
+Title:
+
+`Senior Web Developer | WordPress & Digital Strategy`
+
+Supporting summary:
 
 `Senior web developer with deep WordPress experience, full-site ownership, and digital strategy depth across in-house, agency, and enterprise environments.`
 
-This can be refined later, but it is the current approved direction.
+This is the current approved direction unless changed later.
 
 ## Leadership And Team Coordination Direction
 
@@ -50,6 +56,30 @@ Areas to highlight when true:
 - keeping websites aligned with evolving cookie and consent laws
 
 This should be framed as operational website ownership, not legal expertise.
+
+## AI And Emerging Technology Direction
+
+The content should include practical AI experience where it strengthens credibility and remains true.
+
+Current approved facts to incorporate where relevant:
+
+- Erick's current company encouraged the use of `ChatGPT Enterprise`
+- Erick was assigned as the AI champion for the marketing team
+
+This should be framed as applied business and workflow experience, not as hype.
+
+Good angles:
+
+- internal enablement
+- responsible adoption
+- workflow improvement
+- marketing-team support
+
+Avoid:
+
+- vague "AI expert" language
+- inflated claims about machine learning or data science
+- copy that makes AI feel like the main story instead of a supporting capability
 
 ## Ownership Themes To Emphasize
 
@@ -125,6 +155,19 @@ The writer should make a recruiter think:
 - Erick understands digital strategy, analytics, and optimization
 - Erick can coordinate contributors and keep delivery moving
 - Erick has worked across different company sizes and operating environments
+- Erick can adopt useful new tools like ChatGPT Enterprise in a practical business context
+
+## ATS Direction
+
+The writing should remain ATS-friendly.
+
+That means:
+
+- use recruiter-recognizable job titles and skills
+- keep role scope, tools, and responsibilities explicit
+- avoid gimmicky phrasing that hides core qualifications
+- avoid obvious AI-written patterns that can undermine trust
+- keep resume-style wording clean, standard, and easy to parse
 
 ## Writing Constraints
 

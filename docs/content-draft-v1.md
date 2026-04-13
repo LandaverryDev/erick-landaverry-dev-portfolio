@@ -11,6 +11,12 @@ This draft is based on:
 
 The copy below is recruiter-friendly, human-sounding, SEO-aware, and aligned to senior web developer, WordPress, digital strategy, and full-site ownership positioning.
 
+Approved working homepage direction:
+
+- Title: `Senior Web Developer | WordPress & Digital Strategy`
+- Supporting summary: `Senior web developer with deep WordPress experience, full-site ownership, and digital strategy depth across in-house, agency, and enterprise environments.`
+- Writing constraint: keep the language ATS-friendly and human-sounding.
+
 ## 1. Homepage Headline Options
 
 ### Option 1
@@ -73,6 +79,7 @@ The tone should stay direct, credible, and recruiter-friendly. It should make cl
 - `I am comfortable working across design, development, analytics, integrations, and web operations.`
 - `I have coordinated offshore and contractor developers on active projects with recurring standups and delivery planning.`
 - `I care about websites that are fast, accessible, compliant, and easy to maintain.`
+- `I also helped support practical AI adoption within a marketing team through ChatGPT Enterprise and AI champion responsibilities.`
 
 ## 3. Resume-Page Narrative Direction
 
@@ -103,6 +110,7 @@ The resume page should make it easy to see that Erick has worked across differen
 - WordPress depth
 - frontend credibility
 - digital strategy
+- practical AI adoption in a business context
 - CRO and VWO testing
 - GA4 and GTM integration
 - hosting, deployments, and migrations

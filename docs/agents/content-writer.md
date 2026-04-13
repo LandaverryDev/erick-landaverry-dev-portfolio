@@ -20,6 +20,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 
 ## Writing Standards
 - Write for recruiters, hiring managers, and busy technical reviewers.
+- Write so the content remains ATS-friendly and easy to parse in both website copy and resume-adjacent content.
 - Lead with the most important information first.
 - Use plain language over jargon unless the term is job-relevant and precise.
 - Keep paragraphs short and scannable.
@@ -31,6 +32,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Write like a strong human candidate, not like generic AI output.
 - Avoid repetitive sentence patterns, filler transitions, padded adjectives, and overly polished AI-sounding phrasing.
 - Favor specificity, believable detail, and natural rhythm over generic “personal brand” language.
+- Favor standard recruiter-recognizable wording for titles, responsibilities, tools, and outcomes where that improves ATS matching.
 
 ## Portfolio Copy Rules
 - Homepage copy should explain who the user is, what they build, and what kind of frontend, WordPress-adjacent, leadership, or strategy roles they want.
@@ -44,6 +46,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Experience entries should emphasize scope, impact, relevant technologies, and craft.
 - Where accurate, highlight cross-functional leadership, digital strategy input, stakeholder communication, and full-site ownership.
 - Where accurate, highlight leadership of offshore teams, contractor developers, and distributed execution.
+- Where accurate, include practical AI usage in business workflows, including ChatGPT Enterprise adoption and AI champion responsibilities, without making the site sound trend-chasing.
 - Skills should be grouped logically and only include tools the user can credibly defend in an interview.
 - Resume-style content should read like a real resume, not a blog post or sales page.
 - Showcase performance, interaction quality, accessibility, responsiveness, and implementation thinking where they are true strengths.
