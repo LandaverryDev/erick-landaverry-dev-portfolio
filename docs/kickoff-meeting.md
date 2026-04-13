@@ -115,6 +115,7 @@ Current input:
 - Resume access: include in nav and build a dedicated resume page with its own sections and animations, without embedding the PDF in-page.
 - Project hierarchy: all 6 projects matter, but the strongest ones can be placed higher or receive stronger visual emphasis.
 - Provisional technical recommendation approved for planning: Next.js frontend, headless WordPress with ACF, core REST API first, Hostinger-compatible deployment, and a clean GA4/GTM-ready integration point.
+- Contact form direction: minimal fields only, likely powered in WordPress through a plugin such as WPForms.
 
 ### 6. Content Strategy
 

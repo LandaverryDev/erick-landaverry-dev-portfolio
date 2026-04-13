@@ -146,6 +146,8 @@ This order reflects the portfolio-first positioning while still making the resum
 - Include direct contact methods such as email and LinkedIn.
 - Make the next step obvious.
 - Keep friction low and the call to action visible throughout the experience.
+- Keep the form minimal: name, email, and message.
+- Design the contact experience so it can work cleanly with a WordPress form plugin such as WPForms.
 
 ## Component Inventory
 
@@ -219,7 +221,6 @@ Design the site around reusable, implementation-friendly components.
 - Which 3 testimonials are approved for public use?
 - Do we want the resume page to read like a condensed narrative or a sectioned presentation of the resume content?
 - Are there any project thumbnails or imagery constraints the design should account for?
-- Should the contact form be minimal or more structured with role and project-type fields?
 
 ## Definition Of Done For Design
 
