@@ -21,7 +21,7 @@ Senior web developer with deep WordPress experience, full-site ownership, and di
 
 ### Hero Supporting Line
 
-I bring together frontend implementation, WordPress operations, CRO, analytics, integrations, and website governance so teams can ship, improve, and maintain sites with confidence.
+I lead websites from build to optimization, combining WordPress depth, frontend execution, analytics, and operations to keep them performant, compliant, and aligned with business goals.
 
 ### Hero CTA Suggestions
 
@@ -34,10 +34,11 @@ Use a short trust strip or proof row near the hero:
 
 - WordPress depth
 - Full-site ownership
-- Digital strategy
 - CRO and VWO testing
-- GA4 and GTM integration
+- GA4 and GTM
+- Integrations and automations
 - Site migrations and hosting
+- ADA and cookie compliance
 
 ### Optional Proof Bullets
 
