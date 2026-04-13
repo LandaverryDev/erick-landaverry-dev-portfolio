@@ -64,6 +64,8 @@ The design should support fast answers to:
 - Add subtle depth through gradients, layered surfaces, soft glows, or directional textures where appropriate.
 - Keep the look clean, not cluttered.
 - The page should feel like a premium technical portfolio, not a template.
+- Use a mixed-surface system rather than a purely light or purely dark presentation.
+- Keep the overall impression lean, modern, animated, and tech-forward.
 
 ## Page Hierarchy
 
@@ -215,7 +217,6 @@ Design the site around reusable, implementation-friendly components.
 
 - What is the final ordering of the 6 launch projects?
 - Which 3 testimonials are approved for public use?
-- Do we want a darker or lighter overall surface style around the blue accent?
 - Should the home page hero emphasize frontend developer, WordPress developer, or broader web leadership first?
 - Do we want the resume page to read like a condensed narrative or a sectioned presentation of the resume content?
 - Are there any project thumbnails or imagery constraints the design should account for?

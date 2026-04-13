@@ -25,6 +25,7 @@ Design a headless WordPress portfolio and resume site that helps the owner get i
 - Favor current, tech-forward interaction patterns and animation styles that feel contemporary for 2026 without turning the site into a demo reel.
 - Treat whitespace, contrast, and rhythm as primary tools, not afterthoughts.
 - Use a restrained palette with intentional accents anchored by `#20A4F3`. Avoid visual noise, novelty for its own sake, and default template aesthetics.
+- Use a mixed-surface visual system rather than a flat single-tone approach, keeping the overall feel lean, modern, and technical.
 - Design for confidence and credibility. The work should feel polished, current, and deliberate.
 - Use dummy imagery when photography is needed until real personal photos are provided.
 
