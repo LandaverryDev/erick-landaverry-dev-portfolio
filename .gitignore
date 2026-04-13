@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Local environment files
+/.htaccess
+/local-xdebuginfo.php
+/wp-config.php
+/wp-config-sample.php
+
+# WordPress core
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
+
+# Runtime content
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backups-*/
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+
+# Bundled default themes
+/wp-content/themes/twentytwenty*/
