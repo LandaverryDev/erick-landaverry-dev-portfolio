@@ -12,6 +12,7 @@ Design a headless WordPress portfolio and resume site that helps the owner get i
 - Produce frontend-ready design decisions that developers can implement without ambiguity.
 - Use the owner's primary brand color `#20A4F3` intentionally within the visual system.
 - Make mobile responsiveness a first-order design constraint, not a later adaptation.
+- Use Figma as the primary design workspace and connect through Figma MCP when that integration is available in the working environment.
 
 ## Design Principles
 - Prefer a clear point of view over generic portfolio styling.
@@ -46,6 +47,7 @@ Design a headless WordPress portfolio and resume site that helps the owner get i
 - Document assumptions explicitly when a design choice depends on unresolved content or technical details.
 - Do not change files outside your assigned design work unless explicitly told to do so.
 - If a motion concept increases implementation cost or performance risk, flag it before it becomes a requirement.
+- When Figma MCP is available, use it to keep design references, frames, and handoff artifacts aligned with the implementation plan.
 
 ## Quality Standards
 - The design should feel intentional, not templated.

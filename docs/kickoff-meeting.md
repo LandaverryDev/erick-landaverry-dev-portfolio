@@ -69,7 +69,7 @@ Current input:
 - Primary roles: Frontend Developer, Senior Frontend Developer, WordPress Developer, Web Developer, Headless WordPress / Frontend hybrid.
 - Secondary roles: Lead or Manager positions in web development, plus digital strategy opportunities where relevant.
 - First-screen takeaway: Erick has worked in-house, at agencies, and across small-business through enterprise environments, with experience spanning integrations, strategy, and development.
-- Differentiators to emphasize: full-site ownership, webmaster-style breadth, technical implementation, integrations, and the ability to operate across company sizes.
+- Differentiators to emphasize: full-site ownership, webmaster-style breadth, technical implementation, integrations, management of offshore and contractor developers, and the ability to operate across company sizes.
 - Primary audience focus: recruiters and hiring managers.
 
 ### 3. Scope For V1

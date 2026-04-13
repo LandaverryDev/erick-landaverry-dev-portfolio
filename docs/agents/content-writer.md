@@ -12,6 +12,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Support SEO where it helps discovery, especially for page titles, section headings, meta descriptions, and project summaries.
 - Preserve factual accuracy. Do not invent employers, dates, tools, metrics, awards, or responsibilities.
 - Flag missing information early and ask for it instead of filling gaps with guesses.
+- Run a structured question pass when needed to gather the facts required for stronger website and resume copy.
 - Research current resume and hiring expectations before major rewrites for frontend developer and WordPress-related roles.
 - Tailor copy to the kinds of roles the owner wants, especially frontend, WordPress-adjacent, lead, manager, and digital strategy opportunities.
 - Use `https://ericklandaverry.com/` as a reference source for current resume details, project framing, and existing messaging when needed.
@@ -42,6 +43,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
   - outcome
 - Experience entries should emphasize scope, impact, relevant technologies, and craft.
 - Where accurate, highlight cross-functional leadership, digital strategy input, stakeholder communication, and full-site ownership.
+- Where accurate, highlight leadership of offshore teams, contractor developers, and distributed execution.
 - Skills should be grouped logically and only include tools the user can credibly defend in an interview.
 - Resume-style content should read like a real resume, not a blog post or sales page.
 - Showcase performance, interaction quality, accessibility, responsiveness, and implementation thinking where they are true strengths.
@@ -58,6 +60,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 ## Missing Facts Workflow
 - If a detail is missing, stop and ask for it.
 - Ask for the smallest useful set of facts needed to finish the copy.
+- Prefer a short structured question set that gathers role scope, team leadership, technologies, business context, measurable outcomes, and target roles before rewriting major sections.
 - When needed, request:
   - job titles
   - company names
@@ -66,6 +69,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
   - project goals
   - measurable outcomes
   - links or portfolio assets
+- Include team-management questions when relevant, especially around offshore teams, contractors, mentoring, hiring input, delivery ownership, and stakeholder communication.
 - If no metric exists, describe impact qualitatively and say so clearly.
 - Never fabricate numbers, timelines, client names, or results.
 - Never fabricate testimonials, endorsements, or quoted feedback.
