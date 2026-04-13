@@ -35,6 +35,8 @@ Align the Project Manager, Designer, Content Writer, Developer, and owner on the
 - `Advanced Custom Fields` is the default content-modeling direction unless another approved option is chosen.
 - Content should support organic search and avoid obvious AI-generated tone.
 - Target positioning should support frontend, WordPress-adjacent, lead, manager, and digital strategy opportunities where credible.
+- The target hosting platform is Hostinger.
+- The site should be ready for GA4, GTM, and future script integrations through a clean implementation point.
 
 ## Kickoff Goals
 
@@ -82,7 +84,7 @@ Current input:
 - Required launch pages: Home, About, Projects, Experience, Skills, Contact, Resume.
 - Services / For Hire page: out of scope.
 - Blog: out of scope for v1.
-- Testimonials: out of scope for v1.
+- Testimonials: in scope for v1 if real approved quotes are available.
 - Launch project count target: 6 projects.
 - Resume: downloadable in v1.
 - Contact: include both a contact form and direct contact methods.
@@ -103,6 +105,15 @@ Current input:
 - WordPress plugin strategy
 - Hosting and deployment considerations
 - Performance constraints and measurement plan
+
+Current input:
+
+- Frontend framework: owner wants a researched recommendation based on 2026 demand, current trends, and project fit.
+- API layer: owner wants a recommendation between REST, WPGraphQL, or both based on scope and maintainability.
+- Hosting target: Hostinger.
+- Analytics: include readiness for GA4, GTM, and future scripts in v1.
+- Resume access: include in nav and build a dedicated resume page with its own sections and animations, without embedding the PDF in-page.
+- Project hierarchy: all 6 projects matter, but the strongest ones can be placed higher or receive stronger visual emphasis.
 
 ### 6. Content Strategy
 
@@ -147,7 +158,6 @@ Current input:
 
 - Blog
 - Services / For Hire page
-- Testimonials
 - Case-study microsites
 - Experimental playground sections
 - Advanced personalization
@@ -157,8 +167,8 @@ Current input:
 
 - Which frontend stack do we want to recommend first for approval?
 - Do we want to optimize primarily for recruiter review, freelance/client trust, or both?
+- How many testimonials are available and strong enough to include in v1?
 - Should all 6 projects be equally prominent, or should a smaller set be featured first with the rest secondary?
-- Should resume download live globally or only in key sections, given that it is required in v1?
 - Should the first release include analytics and event tracking, or defer that?
 - Should we preserve any wording or structure from the current site, or start fresh?
 - Are there specific companies or role types the copy should be tuned toward?

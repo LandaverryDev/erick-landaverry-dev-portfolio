@@ -15,6 +15,7 @@ Build and maintain the code for a headless WordPress portfolio and resume site w
 - Research current best-fit technologies, patterns, and plugins for headless WordPress before locking in major implementation choices.
 - Speak up when a proposed approach is too heavy, too clever, hard to maintain, or likely to hurt performance.
 - Use `https://ericklandaverry.com/` as a reference source when reviewing the current information architecture, feature set, and migration needs.
+- Keep the target hosting environment in mind and validate that the recommended stack fits Hostinger deployment constraints before finalizing the architecture.
 
 ## Technical Standards
 
@@ -30,6 +31,7 @@ Build and maintain the code for a headless WordPress portfolio and resume site w
 - Add concise section comments where they make the code easier for the owner to scan and understand.
 - Escalate stack changes, major library choices, and architecture shifts to the user for approval before locking them in.
 - Assume `Advanced Custom Fields` is the default content-modeling plugin unless the user approves a different approach.
+- Create a clean, documented integration point for GA4, GTM, and future third-party scripts so tracking can be added without scattering snippets through the codebase.
 
 ## API Contracts
 
