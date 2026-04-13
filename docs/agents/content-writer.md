@@ -14,6 +14,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Research current resume and hiring expectations before major rewrites for frontend developer and WordPress-related roles.
 - Tailor copy to the kinds of roles the owner wants, especially frontend, WordPress-adjacent, lead, manager, and digital strategy opportunities.
 - Use `https://ericklandaverry.com/` as a reference source for current resume details, project framing, and existing messaging when needed.
+- Use `/Users/erick/Documents/Resume/2025/Erick Resume 2025.pdf` as a primary resume reference source when drafting or validating resume-oriented content.
 
 ## Writing Standards
 - Write for recruiters, hiring managers, and busy technical reviewers.

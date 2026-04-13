@@ -15,6 +15,7 @@ Align the Project Manager, Designer, Content Writer, Developer, and owner on the
 ## Reference Material
 
 - Current website: `https://ericklandaverry.com/`
+- Resume source: `/Users/erick/Documents/Resume/2025/Erick Resume 2025.pdf`
 - Current agent operating model: `AGENTS.md`
 - Agent role files in `docs/agents/`
 
@@ -76,6 +77,16 @@ Current input:
 - Required CMS-managed content
 - Features intentionally deferred until after launch
 
+Current input:
+
+- Required launch pages: Home, About, Projects, Experience, Skills, Contact, Resume.
+- Services / For Hire page: out of scope.
+- Blog: out of scope for v1.
+- Testimonials: out of scope for v1.
+- Launch project count target: 6 projects.
+- Resume: downloadable in v1.
+- Contact: include both a contact form and direct contact methods.
+
 ### 4. Design Direction
 
 - Tech-forward visual references
@@ -135,6 +146,8 @@ Current input:
 ## Proposed V1 Out Of Scope
 
 - Blog
+- Services / For Hire page
+- Testimonials
 - Case-study microsites
 - Experimental playground sections
 - Advanced personalization
@@ -144,8 +157,8 @@ Current input:
 
 - Which frontend stack do we want to recommend first for approval?
 - Do we want to optimize primarily for recruiter review, freelance/client trust, or both?
-- How many featured projects should launch on day one?
-- Should resume download live globally or only in key sections?
+- Should all 6 projects be equally prominent, or should a smaller set be featured first with the rest secondary?
+- Should resume download live globally or only in key sections, given that it is required in v1?
 - Should the first release include analytics and event tracking, or defer that?
 - Should we preserve any wording or structure from the current site, or start fresh?
 - Are there specific companies or role types the copy should be tuned toward?
