@@ -130,6 +130,7 @@ Current input:
 - Testimonials target for v1: 3 real approved testimonials.
 - Copy direction: start fresh rather than preserving the current site's wording.
 - Messaging should be tuned primarily toward Senior Frontend Developer, WordPress Developer, Web Development Manager, and Digital Strategy opportunities.
+- Hero positioning should lean toward web leadership and digital strategy while staying anchored in web development credibility.
 
 ### 7. Delivery Model
 

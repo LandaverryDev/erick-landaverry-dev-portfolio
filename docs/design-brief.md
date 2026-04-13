@@ -94,7 +94,7 @@ This order reflects the portfolio-first positioning while still making the resum
 ### Home
 
 - First screen should establish identity, role range, and credibility.
-- Show a concise summary that mentions frontend depth, WordPress experience, full-site ownership, and work across in-house, agency, small business, and enterprise contexts.
+- Show a concise summary that leans toward web leadership and digital strategy while staying grounded in frontend depth, WordPress experience, full-site ownership, and work across in-house, agency, small business, and enterprise contexts.
 - Include one clear primary action and one secondary action.
 - Surface featured work early.
 - Add a compact trust layer for stack breadth, experience range, or notable capabilities.
@@ -217,7 +217,6 @@ Design the site around reusable, implementation-friendly components.
 
 - What is the final ordering of the 6 launch projects?
 - Which 3 testimonials are approved for public use?
-- Should the home page hero emphasize frontend developer, WordPress developer, or broader web leadership first?
 - Do we want the resume page to read like a condensed narrative or a sectioned presentation of the resume content?
 - Are there any project thumbnails or imagery constraints the design should account for?
 - Should the contact form be minimal or more structured with role and project-type fields?
