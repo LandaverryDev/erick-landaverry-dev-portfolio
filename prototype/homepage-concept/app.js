@@ -2,6 +2,8 @@ const header = document.querySelector(".site-header");
 const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
 const revealItems = document.querySelectorAll(".reveal");
+const systemCards = document.querySelectorAll(".system-card");
+const systemPanels = document.querySelectorAll(".systems-panel");
 
 // Mobile navigation behavior for the standalone concept.
 if (toggle && header) {
@@ -34,3 +36,23 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach((item) => observer.observe(item));
+
+// Small interactive section to make the concept feel less static.
+const setActiveSystem = (id) => {
+  systemCards.forEach((card) => {
+    const active = card.dataset.panel === id;
+    card.classList.toggle("is-active", active);
+    card.setAttribute("aria-selected", String(active));
+  });
+
+  systemPanels.forEach((panel) => {
+    panel.classList.toggle("is-active", panel.dataset.panel === id);
+  });
+};
+
+systemCards.forEach((card) => {
+  const activate = () => setActiveSystem(card.dataset.panel);
+  card.addEventListener("mouseenter", activate);
+  card.addEventListener("focus", activate);
+  card.addEventListener("click", activate);
+});
