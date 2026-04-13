@@ -175,9 +175,9 @@ Current input:
 ## Open Questions
 
 - Do we want to optimize primarily for recruiter review, freelance/client trust, or both?
-- Should all 6 projects be equally prominent, or should a smaller set be featured first with the rest secondary?
 - Should the first release include analytics and event tracking, or defer that?
 - Are there any company types or industries that should receive stronger emphasis inside the copy?
+- Final project ordering, testimonial layout, and resume-page presentation are delegated to the designer based on design research and the approved brief.
 
 ## Expected Outputs
 

@@ -128,8 +128,8 @@ This order reflects the portfolio-first positioning while still making the resum
 
 ### Testimonials
 
-- Include 3 testimonials if approved quotes are available.
-- Design them as supporting proof, not the main selling point.
+- Design the testimonial section now as supporting proof, not the main selling point.
+- Use placeholder content and structure until approved quotes are available.
 - Keep each testimonial short enough to scan quickly.
 - Make the section feel trustworthy and restrained.
 
@@ -215,12 +215,12 @@ Design the site around reusable, implementation-friendly components.
 - The design should be compatible with a headless WordPress + Next.js build.
 - Leave room for future additions like more testimonials, scripts, or sections without needing a redesign.
 
-## Open Questions
+## Designer Authority For Remaining Visual Decisions
 
-- What is the final ordering of the 6 launch projects?
-- Which 3 testimonials are approved for public use?
-- Do we want the resume page to read like a condensed narrative or a sectioned presentation of the resume content?
-- Are there any project thumbnails or imagery constraints the design should account for?
+- The designer can determine the final ordering and visual emphasis of the 6 launch projects based on portfolio strength and design research.
+- The designer can choose whether the resume page reads more like a condensed narrative or a sectioned presentation, as long as it remains scannable and aligned with the portfolio-first strategy.
+- The designer can define the testimonial layout now using placeholders, with real quotes to be added later.
+- The designer can make reasonable decisions around project thumbnails, placeholder imagery, and supporting visual assets until final source material is available.
 
 ## Definition Of Done For Design
 
