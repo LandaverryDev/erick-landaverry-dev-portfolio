@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience Section Explorations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="comparison-page">
+      <header class="comparison-hero reveal">
+        <p class="eyebrow">Section Exploration</p>
+        <h1>Three stronger directions for the experience block</h1>
+        <p class="hero-copy">
+          These concepts are based on the current design and dev research:
+          more editorial hierarchy, cleaner interaction, larger spacing, and
+          less resume-like presentation.
+        </p>
+      </header>
+
+      <section class="concept concept-editorial reveal" id="concept-editorial">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 1</p>
+            <h2>Editorial Rail</h2>
+          </div>
+          <p class="concept-summary">
+            A more senior, composed layout. This treats experience as a range
+            story instead of a timeline.
+          </p>
+        </div>
+
+        <div class="editorial-layout">
+          <aside class="editorial-rail">
+            <p class="mini-label">Operating Range</p>
+            <h3>Built for in-house, agency, small-business, and enterprise teams.</h3>
+            <p>
+              This version leans more premium and recruiter-friendly. It reads
+              like a concise leadership story, not a resume block.
+            </p>
+            <div class="chip-row">
+              <span>Web Leadership</span>
+              <span>WordPress</span>
+              <span>Digital Strategy</span>
+              <span>Performance</span>
+            </div>
+          </aside>
+
+          <div class="editorial-panels">
+            <article class="editorial-card">
+              <p class="mini-label">Current Focus</p>
+              <h3>Full-site ownership with technical depth</h3>
+              <p>
+                Leading site planning, implementation, analytics, compliance,
+                optimization, and ongoing operations without fragmenting the work.
+              </p>
+            </article>
+
+            <article class="editorial-card">
+              <p class="mini-label">Delivery Model</p>
+              <h3>Cross-functional execution across different teams</h3>
+              <p>
+                Working with marketing, leadership, offshore developers, vendors,
+                and internal stakeholders while still shipping production work.
+              </p>
+            </article>
+
+            <article class="editorial-card">
+              <p class="mini-label">Scale Context</p>
+              <h3>From small-business momentum to enterprise process</h3>
+              <p>
+                Adjusting systems, communication, and technical planning to match
+                the organization instead of forcing a single delivery style.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept concept-switcher reveal" id="concept-switcher">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 2</p>
+            <h2>Interactive Switcher</h2>
+          </div>
+          <p class="concept-summary">
+            The most current direction. It gives the section a single interactive
+            moment and makes your experience feel more intentional.
+          </p>
+        </div>
+
+        <div class="switcher-shell">
+          <div class="switcher-nav" role="tablist" aria-label="Experience views">
+            <button class="switch-pill is-active" type="button" data-panel="ownership">
+              Ownership
+            </button>
+            <button class="switch-pill" type="button" data-panel="optimization">
+              Optimization
+            </button>
+            <button class="switch-pill" type="button" data-panel="delivery">
+              Delivery
+            </button>
+          </div>
+
+          <div class="switcher-stage">
+            <article class="switch-panel is-active" data-panel-content="ownership">
+              <div class="switch-copy">
+                <p class="mini-label">Ownership</p>
+                <h3>Web leadership grounded in actual delivery</h3>
+                <p>
+                  A stronger fit if you want the section to communicate seniority
+                  fast without feeling too corporate or too resume-driven.
+                </p>
+                <ul class="proof-list">
+                  <li>Owns launches, migrations, hosting, analytics, and governance</li>
+                  <li>Connects technical decisions to business goals and site health</li>
+                  <li>Combines WordPress depth with frontend and operational oversight</li>
+                </ul>
+              </div>
+
+              <div class="switch-proof">
+                <span>WordPress Depth</span>
+                <span>Full-Site Ownership</span>
+                <span>Hosting</span>
+                <span>Migrations</span>
+                <span>ADA</span>
+                <span>Cookie Consent</span>
+              </div>
+            </article>
+
+            <article class="switch-panel" data-panel-content="optimization">
+              <div class="switch-copy">
+                <p class="mini-label">Optimization</p>
+                <h3>Optimization is part of the work, not an afterthought</h3>
+                <p>
+                  This version is strongest if you want the section to reinforce
+                  CRO, testing, analytics, and practical performance ownership.
+                </p>
+                <ul class="proof-list">
+                  <li>Uses GA4, GTM, and reporting to guide site decisions</li>
+                  <li>Supports VWO and experiment-minded improvement loops</li>
+                  <li>Keeps performance, accessibility, and compliance in view</li>
+                </ul>
+              </div>
+
+              <div class="switch-proof">
+                <span>GA4 / GTM</span>
+                <span>VWO</span>
+                <span>CRO</span>
+                <span>Performance</span>
+                <span>Accessibility</span>
+                <span>Automation</span>
+              </div>
+            </article>
+
+            <article class="switch-panel" data-panel-content="delivery">
+              <div class="switch-copy">
+                <p class="mini-label">Delivery</p>
+                <h3>Structured delivery across teams, vendors, and offshore support</h3>
+                <p>
+                  This is the clearest option if you want to show management range
+                  without turning the section into a formal leadership bio.
+                </p>
+                <ul class="proof-list">
+                  <li>Coordinates offshore and contractor developers by project need</li>
+                  <li>Works within timelines, systems, and legal constraints</li>
+                  <li>Bridges strategy, execution, and launch readiness</li>
+                </ul>
+              </div>
+
+              <div class="switch-proof">
+                <span>Offshore Devs</span>
+                <span>Contractors</span>
+                <span>Stakeholders</span>
+                <span>Integrations</span>
+                <span>Compliance</span>
+                <span>Planning</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept concept-bento reveal" id="concept-bento">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 3</p>
+            <h2>Bento Evidence Grid</h2>
+          </div>
+          <p class="concept-summary">
+            The most design-forward option. This turns experience into proof
+            tiles with stronger visual variety and motion.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-card-hero">
+            <p class="mini-label">Career Range</p>
+            <h3>Experience that spans different business sizes and delivery models.</h3>
+            <p>
+              Best if you want the page to feel more like a modern product site
+              than a recruiter-style resume layout.
+            </p>
+          </article>
+
+          <article class="bento-card">
+            <p class="mini-label">In-house</p>
+            <h3>Operational ownership</h3>
+            <p>Sites that need continuity, governance, reporting, and iteration.</p>
+          </article>
+
+          <article class="bento-card">
+            <p class="mini-label">Agency</p>
+            <h3>Client and stakeholder speed</h3>
+            <p>Adapting to timelines, brands, systems, and changing priorities.</p>
+          </article>
+
+          <article class="bento-card">
+            <p class="mini-label">Enterprise</p>
+            <h3>Compliance and process awareness</h3>
+            <p>Working within approvals, integrations, and broader operational constraints.</p>
+          </article>
+
+          <article class="bento-card">
+            <p class="mini-label">Delivery</p>
+            <h3>Offshore and contractor coordination</h3>
+            <p>Project-based guidance, weekly standups, oversight, and integration alignment.</p>
+          </article>
+
+          <article class="bento-card bento-card-tags">
+            <p class="mini-label">Capability Layer</p>
+            <div class="chip-row">
+              <span>WordPress</span>
+              <span>Frontend</span>
+              <span>Analytics</span>
+              <span>Migrations</span>
+              <span>Hosting</span>
+              <span>Testing</span>
+              <span>Compliance</span>
+              <span>Strategy</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
