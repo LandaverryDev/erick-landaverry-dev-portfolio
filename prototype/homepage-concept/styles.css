@@ -375,29 +375,10 @@ h1 {
     linear-gradient(180deg, rgba(13, 24, 36, 0.92), rgba(21, 38, 59, 0.95)),
     linear-gradient(135deg, rgba(32, 164, 243, 0.25), transparent);
   isolation: isolate;
-}
-
-.frame-hud {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.hud-chip {
-  padding: 7px 11px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.72);
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: 24px;
 }
 
 .visual-frame::before,
@@ -426,131 +407,115 @@ h1 {
   animation: driftGlow 11s ease-in-out infinite reverse;
 }
 
-.visual-grid {
-  position: absolute;
-  inset: 0;
+.value-frame {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.88), transparent 92%);
-  opacity: 0.28;
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(13, 24, 36, 0.94), rgba(21, 38, 59, 0.96)),
+    linear-gradient(135deg, rgba(32, 164, 243, 0.18), transparent);
+  background-size:
+    44px 44px,
+    44px 44px,
+    auto,
+    auto;
 }
 
-.visual-ping {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(32, 164, 243, 0.4);
-  box-shadow: 0 0 0 0 rgba(32, 164, 243, 0.32);
-  animation: pulsePing 3.4s ease-out infinite;
-}
-
-.ping-a {
-  left: 18%;
-  top: 22%;
-}
-
-.ping-b {
-  right: 18%;
-  bottom: 24%;
-  animation-delay: 1.2s;
-}
-
-.frame-code {
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
-  z-index: 2;
-  display: grid;
-  gap: 6px;
-  min-width: 200px;
-  padding: 14px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  background: rgba(8, 18, 28, 0.68);
+.value-panel,
+.value-card,
+.value-rail-item {
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: rgba(7, 18, 29, 0.58);
   backdrop-filter: blur(14px);
-  color: rgba(255, 255, 255, 0.76);
-  font-family: var(--mono);
-  font-size: 0.77rem;
-  line-height: 1.55;
+  box-shadow: 0 22px 42px rgba(3, 11, 19, 0.24);
 }
 
-.frame-axis {
-  position: absolute;
-  background: linear-gradient(90deg, transparent, rgba(127, 210, 255, 0.4), transparent);
-  opacity: 0.58;
+.value-panel-primary {
+  padding: 26px;
 }
 
-.frame-axis-x {
-  left: 10%;
-  right: 10%;
-  top: 50%;
-  height: 1px;
-}
-
-.frame-axis-y {
-  top: 10%;
-  bottom: 10%;
-  left: 58%;
-  width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(127, 210, 255, 0.34), transparent);
-}
-
-.portrait-orb {
-  position: absolute;
-  right: 10%;
-  top: 17%;
-  width: min(260px, 52%);
-  aspect-ratio: 0.86;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 28px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
-    linear-gradient(135deg, rgba(32, 164, 243, 0.22), rgba(255, 255, 255, 0));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  animation: orbFloat 10s ease-in-out infinite;
-}
-
-.visual-card {
-  position: absolute;
-  display: grid;
-  gap: 8px;
-  width: 220px;
-  padding: 18px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-lg);
-  color: white;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(16px);
-  box-shadow: 0 16px 38px rgba(3, 11, 19, 0.24);
-}
-
-.visual-card span {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+.value-kicker,
+.value-card span,
+.value-rail-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: #7fd2ff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.visual-card strong {
-  font-size: 1.1rem;
-  line-height: 1.2;
+.value-panel-primary h2 {
+  margin-bottom: 14px;
+  color: white;
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
-.card-a {
-  left: 22px;
-  top: 30px;
-  animation: cardFloatA 8s ease-in-out infinite;
+.value-panel-primary p,
+.value-card strong,
+.value-rail-item strong {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
 }
 
-.card-b {
-  left: 42px;
-  bottom: 34px;
-  animation: cardFloatB 9s ease-in-out infinite;
+.value-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.value-card {
+  min-height: 168px;
+  padding: 20px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.value-card strong,
+.value-rail-item strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.value-card-featured {
+  grid-column: span 2;
+  min-height: 152px;
+  background:
+    radial-gradient(circle at top right, rgba(32, 164, 243, 0.18), transparent 28%),
+    rgba(7, 18, 29, 0.7);
+}
+
+.value-card:hover,
+.value-card:focus-within,
+.value-rail-item:hover,
+.value-rail-item:focus-within {
+  transform: translateY(-4px);
+  border-color: rgba(127, 210, 255, 0.24);
+  background: rgba(9, 22, 35, 0.74);
+}
+
+.value-rail {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.value-rail-item {
+  min-height: 132px;
+  padding: 18px 20px;
 }
 
 .proof-strip {
@@ -1338,9 +1303,8 @@ h1 {
 
   .visual-frame::before,
   .visual-frame::after,
-  .portrait-orb,
-  .visual-card,
-  .visual-ping {
+  .value-card,
+  .value-rail-item {
     animation: none !important;
   }
 }
@@ -1367,6 +1331,15 @@ h1 {
 
   .visual-frame {
     min-height: 360px;
+  }
+
+  .value-grid,
+  .value-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card-featured {
+    grid-column: span 1;
   }
 }
 
@@ -1468,18 +1441,9 @@ h1 {
     padding: 34px 22px;
   }
 
-  .frame-code {
-    right: 14px;
-    left: 14px;
-    min-width: 0;
-  }
-
-  .visual-card {
-    width: 170px;
-    padding: 14px;
-  }
-
-  .visual-card strong {
-    font-size: 0.98rem;
+  .value-panel-primary,
+  .value-card,
+  .value-rail-item {
+    padding: 18px;
   }
 }
