@@ -4,6 +4,8 @@ const navLinks = document.querySelectorAll(".site-nav a");
 const revealItems = document.querySelectorAll(".reveal");
 const systemCards = document.querySelectorAll(".system-card");
 const systemPanels = document.querySelectorAll(".systems-panel");
+const systemsIndicator = document.querySelector(".systems-indicator");
+const projectCards = document.querySelectorAll(".project-card-premium");
 
 // Mobile navigation behavior for the standalone concept.
 if (toggle && header) {
@@ -48,6 +50,14 @@ const setActiveSystem = (id) => {
   systemPanels.forEach((panel) => {
     panel.classList.toggle("is-active", panel.dataset.panel === id);
   });
+
+  if (systemsIndicator) {
+    const activeCard = document.querySelector(`.system-card[data-panel="${id}"]`);
+    if (activeCard) {
+      systemsIndicator.style.height = `${activeCard.offsetHeight}px`;
+      systemsIndicator.style.transform = `translateY(${activeCard.offsetTop}px)`;
+    }
+  }
 };
 
 systemCards.forEach((card) => {
@@ -56,3 +66,13 @@ systemCards.forEach((card) => {
   card.addEventListener("focus", activate);
   card.addEventListener("click", activate);
 });
+
+projectCards.forEach((card) => {
+  card.addEventListener("pointermove", (event) => {
+    const bounds = card.getBoundingClientRect();
+    card.style.setProperty("--spotlight-x", `${event.clientX - bounds.left}px`);
+    card.style.setProperty("--spotlight-y", `${event.clientY - bounds.top}px`);
+  });
+});
+
+setActiveSystem("ownership");
