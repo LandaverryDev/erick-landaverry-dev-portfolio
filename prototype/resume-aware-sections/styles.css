@@ -1,0 +1,412 @@
+:root {
+  --bg: #071019;
+  --bg-soft: #0b1723;
+  --surface: rgba(13, 26, 40, 0.82);
+  --surface-strong: rgba(15, 31, 47, 0.95);
+  --line: rgba(129, 185, 216, 0.14);
+  --line-strong: rgba(32, 164, 243, 0.28);
+  --text: #eef6ff;
+  --text-soft: #a8bbcf;
+  --accent: #20a4f3;
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.3);
+  --radius-xl: 34px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(32, 164, 243, 0.12), transparent 24%),
+    linear-gradient(180deg, #071019 0%, #0b1420 100%);
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 150px 150px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82), transparent 90%);
+}
+
+.page-shell {
+  width: min(1240px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 92px 0 120px;
+}
+
+.page-hero,
+.concept {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 480ms ease,
+    transform 480ms ease;
+}
+
+.page-hero.is-visible,
+.concept.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-hero {
+  margin-bottom: 44px;
+}
+
+.eyebrow,
+.concept-label,
+.mini-label,
+.band-kicker {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 6vw, 5.3rem);
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.98;
+}
+
+h3 {
+  font-size: clamp(1.22rem, 2vw, 1.75rem);
+  line-height: 1.08;
+}
+
+.hero-copy,
+.concept-summary,
+.role-points li,
+.role-title,
+.band-copy,
+.band-role,
+.systems-card p,
+.radar-card p {
+  color: var(--text-soft);
+  line-height: 1.78;
+}
+
+.hero-copy {
+  max-width: 760px;
+  margin-top: 20px;
+}
+
+.concept {
+  margin-top: 28px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 100%),
+    var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px);
+}
+
+.concept-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.concept-summary {
+  max-width: 430px;
+  margin: 0;
+}
+
+.ledger-layout,
+.accordion-layout,
+.systems-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.95fr);
+  gap: 22px;
+}
+
+.career-ledger,
+.role-stack,
+.experience-bands,
+.capability-matrix,
+.skill-radar,
+.systems-board {
+  display: grid;
+  gap: 18px;
+}
+
+.role-card,
+.matrix-card,
+.role-toggle,
+.role-panel,
+.radar-card,
+.band-card,
+.systems-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+    var(--surface-strong);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.role-card,
+.matrix-card,
+.role-panel,
+.radar-card,
+.band-card,
+.systems-card {
+  padding: 24px;
+}
+
+.role-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
+  gap: 24px;
+}
+
+.role-date {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.role-title,
+.band-role {
+  margin-top: 8px;
+}
+
+.role-points,
+.mini-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.role-points li,
+.mini-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.role-points li + li,
+.mini-list li + li {
+  margin-top: 12px;
+}
+
+.role-points li::before,
+.mini-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px rgba(32, 164, 243, 0.12);
+}
+
+.capability-matrix {
+  align-content: start;
+}
+
+.matrix-card,
+.radar-card,
+.systems-card {
+  min-height: 150px;
+}
+
+.chip-cluster,
+.panel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chip-cluster span,
+.panel-tags span {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #dcecff;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.role-toggle {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  padding: 20px 22px;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.role-toggle span {
+  display: grid;
+  gap: 4px;
+}
+
+.role-toggle small,
+.role-toggle em {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  font-style: normal;
+}
+
+.role-toggle.is-active,
+.role-toggle:hover,
+.role-toggle:focus-visible {
+  border-color: var(--line-strong);
+  background:
+    radial-gradient(circle at right top, rgba(32, 164, 243, 0.12), transparent 28%),
+    var(--surface-strong);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.role-panel {
+  display: none;
+}
+
+.role-panel.is-active {
+  display: block;
+}
+
+.skill-radar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.radar-card-large {
+  grid-column: span 2;
+  background:
+    radial-gradient(circle at top right, rgba(32, 164, 243, 0.16), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    var(--surface-strong);
+}
+
+.experience-bands {
+  align-content: start;
+}
+
+.band-card {
+  display: grid;
+  grid-template-columns: 120px minmax(200px, 0.8fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.band-kicker {
+  margin-top: 2px;
+}
+
+.band-copy {
+  margin: 0;
+}
+
+.systems-board {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.systems-card-large {
+  grid-column: span 2;
+  background:
+    radial-gradient(circle at top right, rgba(32, 164, 243, 0.14), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    var(--surface-strong);
+}
+
+@media (max-width: 1040px) {
+  .ledger-layout,
+  .accordion-layout,
+  .systems-layout,
+  .role-card,
+  .band-card {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-heading {
+    display: grid;
+  }
+
+  .concept-summary {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    width: min(100% - 20px, 720px);
+    padding: 72px 0 88px;
+  }
+
+  .concept {
+    padding: 22px;
+  }
+
+  .skill-radar,
+  .systems-board {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-card-large,
+  .systems-card-large {
+    grid-column: span 1;
+  }
+
+  .role-toggle {
+    display: grid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-hero,
+  .concept,
+  .role-toggle {
+    transition: none;
+  }
+}

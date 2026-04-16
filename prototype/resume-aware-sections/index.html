@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume-Aware Section Explorations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-hero reveal">
+        <p class="eyebrow">Resume-Aware Layouts</p>
+        <h1>Three better ways to show both experience and skills</h1>
+        <p class="hero-copy">
+          These concepts are built from your actual resume structure: four senior
+          web roles, layered ownership, and grouped technical skills across
+          development, platforms, analytics, and operations.
+        </p>
+      </header>
+
+      <section class="concept reveal" id="ledger-layout">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 1</p>
+            <h2>Career Ledger + Capability Matrix</h2>
+          </div>
+          <p class="concept-summary">
+            Best if you want recruiters to scan roles quickly while still seeing
+            the stack and ownership categories beside them.
+          </p>
+        </div>
+
+        <div class="ledger-layout">
+          <div class="career-ledger">
+            <article class="role-card">
+              <div class="role-meta">
+                <p class="role-date">Nov 2023 - Present</p>
+                <h3>Smart Start Inc.</h3>
+                <p class="role-title">Full Stack Web Developer & Designer</p>
+              </div>
+              <ul class="role-points">
+                <li>Managed websites across performance, security, uptime, and full-cycle development.</li>
+                <li>Integrated third-party APIs for forms, geolocation, email delivery, and analytics.</li>
+                <li>Built responsive landing pages with A/B testing, UX/UI, and SEO focus.</li>
+              </ul>
+            </article>
+
+            <article class="role-card">
+              <div class="role-meta">
+                <p class="role-date">Oct 2022 - Sept 2023</p>
+                <h3>Plainsight AI</h3>
+                <p class="role-title">Senior WordPress Developer</p>
+              </div>
+              <ul class="role-points">
+                <li>Designed and maintained WordPress sites with custom themes and SEO enhancements.</li>
+                <li>Improved performance with custom blocks, new features, and theme optimization.</li>
+                <li>Worked with marketing and Figma to improve engagement and user experience.</li>
+              </ul>
+            </article>
+
+            <article class="role-card">
+              <div class="role-meta">
+                <p class="role-date">Feb 2022 - Oct 2023</p>
+                <h3>Consensus</h3>
+                <p class="role-title">Senior Web Developer</p>
+              </div>
+              <ul class="role-points">
+                <li>Led front-end and back-end development with performance and UX improvements.</li>
+                <li>Built custom WordPress themes with Understrap, NPM, and Bootstrap.</li>
+                <li>Improved organic visibility through SEO strategies and search-focused updates.</li>
+              </ul>
+            </article>
+
+            <article class="role-card">
+              <div class="role-meta">
+                <p class="role-date">Aug 2021 - Feb 2022</p>
+                <h3>Webfor</h3>
+                <p class="role-title">Senior Web Developer</p>
+              </div>
+              <ul class="role-points">
+                <li>Managed developers across fully custom website builds and client delivery.</li>
+                <li>Built WordPress themes with strong usability, performance, and browser support.</li>
+                <li>Expanded functionality through API integrations and front-end development.</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="capability-matrix">
+            <div class="matrix-card">
+              <p class="mini-label">Core Competencies</p>
+              <div class="chip-cluster">
+                <span>Website Development</span>
+                <span>Front-End Development</span>
+                <span>Project Management</span>
+                <span>SEO & Analytics</span>
+              </div>
+            </div>
+
+            <div class="matrix-card">
+              <p class="mini-label">Languages & Frameworks</p>
+              <div class="chip-cluster">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>SCSS</span>
+                <span>Bootstrap</span>
+                <span>Node.js</span>
+                <span>jQuery</span>
+                <span>MySQL</span>
+                <span>API Integration</span>
+              </div>
+            </div>
+
+            <div class="matrix-card">
+              <p class="mini-label">Platforms & Ops</p>
+              <div class="chip-cluster">
+                <span>WordPress</span>
+                <span>Git/GitHub</span>
+                <span>WPEngine</span>
+                <span>Pantheon</span>
+                <span>Flywheel</span>
+                <span>Hostinger</span>
+                <span>DNS</span>
+                <span>cPanel / WHM</span>
+                <span>Caching</span>
+                <span>Uptime</span>
+              </div>
+            </div>
+
+            <div class="matrix-card">
+              <p class="mini-label">Design / Growth</p>
+              <div class="chip-cluster">
+                <span>Figma</span>
+                <span>Adobe XD</span>
+                <span>Flexbox / Grid</span>
+                <span>A/B Testing</span>
+                <span>Google Analytics</span>
+                <span>Google Tag Manager</span>
+                <span>SEMRush</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="concept reveal" id="accordion-layout">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 2</p>
+            <h2>Role Stack + Skill Radar</h2>
+          </div>
+          <p class="concept-summary">
+            Best if you want the page to feel more interactive while still
+            clearly breaking out your roles, stack, and operating strengths.
+          </p>
+        </div>
+
+        <div class="accordion-layout">
+          <div class="role-stack">
+            <button class="role-toggle is-active" type="button" data-role="smartstart">
+              <span>
+                <strong>Smart Start Inc.</strong>
+                <small>Full Stack Web Developer & Designer</small>
+              </span>
+              <em>Nov 2023 - Present</em>
+            </button>
+            <div class="role-panel is-active" data-role-panel="smartstart">
+              <ul class="role-points">
+                <li>Managed performance, uptime, and secure delivery for active sites.</li>
+                <li>Handled APIs for forms, geolocation, email, and analytics tracking.</li>
+                <li>Built high-converting landing pages with UX/UI, testing, and SEO focus.</li>
+              </ul>
+              <div class="panel-tags">
+                <span>JavaScript</span>
+                <span>VueJs</span>
+                <span>jQuery</span>
+                <span>PHP</span>
+                <span>SEO</span>
+              </div>
+            </div>
+
+            <button class="role-toggle" type="button" data-role="plainsight">
+              <span>
+                <strong>Plainsight AI</strong>
+                <small>Senior WordPress Developer</small>
+              </span>
+              <em>Oct 2022 - Sept 2023</em>
+            </button>
+            <div class="role-panel" data-role-panel="plainsight">
+              <ul class="role-points">
+                <li>Built and maintained WordPress sites with custom themes and SEO enhancements.</li>
+                <li>Improved engagement with custom blocks, features, and theme optimization.</li>
+                <li>Collaborated with marketing in Figma to design and launch a new site.</li>
+              </ul>
+              <div class="panel-tags">
+                <span>WordPress</span>
+                <span>Custom Themes</span>
+                <span>Figma</span>
+                <span>Pantheon</span>
+                <span>WPEngine</span>
+              </div>
+            </div>
+
+            <button class="role-toggle" type="button" data-role="consensus">
+              <span>
+                <strong>Consensus</strong>
+                <small>Senior Web Developer</small>
+              </span>
+              <em>Feb 2022 - Oct 2023</em>
+            </button>
+            <div class="role-panel" data-role-panel="consensus">
+              <ul class="role-points">
+                <li>Led front-end and back-end work with performance and UX improvement goals.</li>
+                <li>Built custom themes using Understrap, NPM, and Bootstrap.</li>
+                <li>Drove organic growth through SEO strategy and site improvements.</li>
+              </ul>
+              <div class="panel-tags">
+                <span>Understrap</span>
+                <span>NPM</span>
+                <span>Bootstrap</span>
+                <span>SEO</span>
+                <span>Performance</span>
+              </div>
+            </div>
+
+            <button class="role-toggle" type="button" data-role="webfor">
+              <span>
+                <strong>Webfor</strong>
+                <small>Senior Web Developer</small>
+              </span>
+              <em>Aug 2021 - Feb 2022</em>
+            </button>
+            <div class="role-panel" data-role-panel="webfor">
+              <ul class="role-points">
+                <li>Managed developers on fully custom websites and client delivery.</li>
+                <li>Built WordPress themes with a focus on usability and performance.</li>
+                <li>Extended functionality with API integrations and front-end work.</li>
+              </ul>
+              <div class="panel-tags">
+                <span>Leadership</span>
+                <span>WordPress</span>
+                <span>APIs</span>
+                <span>Client Delivery</span>
+                <span>Usability</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="skill-radar">
+            <div class="radar-card radar-card-large">
+              <p class="mini-label">What This Range Shows</p>
+              <h3>Senior web delivery across product, marketing, operations, and platform work.</h3>
+              <p>
+                This concept is stronger when the goal is to make your resume feel
+                alive without losing the actual chronology.
+              </p>
+            </div>
+
+            <div class="radar-card">
+              <p class="mini-label">Build</p>
+              <div class="chip-cluster">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>SCSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+
+            <div class="radar-card">
+              <p class="mini-label">Platform</p>
+              <div class="chip-cluster">
+                <span>WordPress</span>
+                <span>Git / GitHub</span>
+                <span>Elementor</span>
+                <span>WPBakery</span>
+                <span>DIVI</span>
+              </div>
+            </div>
+
+            <div class="radar-card">
+              <p class="mini-label">Operate</p>
+              <div class="chip-cluster">
+                <span>Pantheon</span>
+                <span>WPEngine</span>
+                <span>Flywheel</span>
+                <span>Hostinger</span>
+                <span>DNS</span>
+                <span>Uptime</span>
+              </div>
+            </div>
+
+            <div class="radar-card">
+              <p class="mini-label">Optimize</p>
+              <div class="chip-cluster">
+                <span>SEO</span>
+                <span>GA</span>
+                <span>GTM</span>
+                <span>A/B Testing</span>
+                <span>SEMRush</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="concept reveal" id="systems-layout">
+        <div class="concept-heading">
+          <div>
+            <p class="concept-label">Option 3</p>
+            <h2>Experience Bands + Systems Board</h2>
+          </div>
+          <p class="concept-summary">
+            Best if you want a more product-like, modern layout that groups your
+            roles into a broader operating system instead of a traditional resume stack.
+          </p>
+        </div>
+
+        <div class="systems-layout">
+          <div class="experience-bands">
+            <article class="band-card">
+              <p class="band-kicker">Current</p>
+              <div>
+                <h3>Smart Start Inc.</h3>
+                <p class="band-role">Full Stack Web Developer & Designer</p>
+              </div>
+              <p class="band-copy">
+                Full-cycle development, API integrations, landing pages, performance, uptime,
+                and practical site operations.
+              </p>
+            </article>
+
+            <article class="band-card">
+              <p class="band-kicker">WordPress</p>
+              <div>
+                <h3>Plainsight AI</h3>
+                <p class="band-role">Senior WordPress Developer</p>
+              </div>
+              <p class="band-copy">
+                Custom themes, SEO enhancements, performance gains, feature development,
+                and marketing collaboration.
+              </p>
+            </article>
+
+            <article class="band-card">
+              <p class="band-kicker">Performance</p>
+              <div>
+                <h3>Consensus</h3>
+                <p class="band-role">Senior Web Developer</p>
+              </div>
+              <p class="band-copy">
+                Front-end and back-end development, theme architecture, SEO work,
+                and performance improvements.
+              </p>
+            </article>
+
+            <article class="band-card">
+              <p class="band-kicker">Leadership</p>
+              <div>
+                <h3>Webfor</h3>
+                <p class="band-role">Senior Web Developer</p>
+              </div>
+              <p class="band-copy">
+                Team leadership, fully custom websites, API integrations, and
+                cross-browser front-end quality.
+              </p>
+            </article>
+          </div>
+
+          <div class="systems-board">
+            <article class="systems-card systems-card-large">
+              <p class="mini-label">How The Work Groups Together</p>
+              <h3>Experience is stronger when it is organized by operating system, not by raw bullet count.</h3>
+              <p>
+                This option treats your experience history and skill stack as one
+                coordinated system.
+              </p>
+            </article>
+
+            <article class="systems-card">
+              <p class="mini-label">Build</p>
+              <ul class="mini-list">
+                <li>WordPress themes</li>
+                <li>HTML, CSS, SCSS</li>
+                <li>JavaScript, PHP</li>
+                <li>Bootstrap, jQuery</li>
+              </ul>
+            </article>
+
+            <article class="systems-card">
+              <p class="mini-label">Design</p>
+              <ul class="mini-list">
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>UX/UI focus</li>
+                <li>Flexbox / Grid</li>
+              </ul>
+            </article>
+
+            <article class="systems-card">
+              <p class="mini-label">Operate</p>
+              <ul class="mini-list">
+                <li>DNS</li>
+                <li>cPanel / WHM</li>
+                <li>Pantheon / WPEngine</li>
+                <li>Hostinger / Flywheel</li>
+              </ul>
+            </article>
+
+            <article class="systems-card">
+              <p class="mini-label">Grow</p>
+              <ul class="mini-list">
+                <li>SEO</li>
+                <li>Google Analytics</li>
+                <li>Google Tag Manager</li>
+                <li>A/B Testing</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
