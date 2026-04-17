@@ -189,6 +189,7 @@ export default function Home() {
             <article className={`content-panel ${activeSection === "home" ? "is-active" : ""}`} id="home">
               <div className="panel-inner panel-home">
                 <div className="home-copy">
+                  <div className="home-copy-shell">
                   <p className="panel-eyebrow">Senior Web Developer</p>
                   <h2>More than build work. Real platform ownership.</h2>
                   <p>
@@ -201,6 +202,17 @@ export default function Home() {
                     built and what still needs to be owned after launch.
                   </p>
 
+                  <div className="home-notes">
+                    <div className="home-note-card">
+                      <span>Operating range</span>
+                      <strong>In-house, agency, small business, and enterprise environments.</strong>
+                    </div>
+                    <div className="home-note-card">
+                      <span>Working style</span>
+                      <strong>Frontend execution backed by analytics, launch support, and web operations.</strong>
+                    </div>
+                  </div>
+
                   <div className="hero-actions">
                     <button className="button-primary" type="button" onClick={() => handleSectionChange("projects")}>
                       View projects
@@ -209,16 +221,27 @@ export default function Home() {
                       Contact
                     </button>
                   </div>
+                  </div>
                 </div>
 
                 <div className="home-signal">
                   <div className="identity-panel identity-panel-build">
                     <span>What I build</span>
                     <strong>WordPress sites, landing pages, frontend systems, migrations, and integrations.</strong>
+                    <ul className="identity-list">
+                      <li>Responsive marketing and service websites</li>
+                      <li>Campaign pages and conversion-focused flows</li>
+                      <li>CMS builds, integrations, and platform changes</li>
+                    </ul>
                   </div>
                   <div className="identity-panel identity-panel-own">
                     <span>What I own</span>
                     <strong>GA4, GTM, VWO, CRO, hosting, compliance, and launch support after go-live.</strong>
+                    <ul className="identity-list">
+                      <li>Tracking quality, reporting alignment, and testing</li>
+                      <li>Compliance, governance, and cookie requirements</li>
+                      <li>Operational upkeep after launch, not just delivery</li>
+                    </ul>
                   </div>
                   <div className="identity-rail">
                     <span>Frontend depth</span>

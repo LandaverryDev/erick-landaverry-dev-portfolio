@@ -370,6 +370,18 @@ textarea {
   align-items: center;
 }
 
+.home-copy-shell {
+  position: relative;
+  padding: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.8rem;
+  background:
+    radial-gradient(circle at top left, rgba(32, 164, 243, 0.1), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+    rgba(7, 16, 27, 0.42);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
 .home-copy h2,
 .panel-inner h2 {
   margin: 0.85rem 0 1rem;
@@ -387,12 +399,41 @@ textarea {
   color: var(--text-soft);
 }
 
+.home-notes,
 .home-signal,
 .two-column-layout,
 .resume-layout,
 .contact-layout {
   display: grid;
   gap: 1rem;
+}
+
+.home-notes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.2rem;
+}
+
+.home-note-card {
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.home-note-card span {
+  display: block;
+  color: #87d6ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-note-card strong {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
 
 .identity-panel,
@@ -407,6 +448,8 @@ textarea {
 
 .identity-panel {
   padding: 1.3rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .identity-panel span,
@@ -433,6 +476,16 @@ textarea {
   font-size: 1.08rem;
 }
 
+.identity-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto auto 0 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(32, 164, 243, 0.42), transparent 60%);
+  opacity: 0.8;
+}
+
 .identity-panel-build {
   background:
     radial-gradient(circle at top left, rgba(32, 164, 243, 0.18), transparent 32%),
@@ -445,6 +498,33 @@ textarea {
     radial-gradient(circle at top right, rgba(32, 164, 243, 0.14), transparent 32%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
     rgba(10, 21, 35, 0.9);
+}
+
+.identity-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.identity-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.identity-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72rem;
+  left: 0;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 0.28rem rgba(32, 164, 243, 0.12);
 }
 
 .identity-rail {
@@ -758,6 +838,10 @@ textarea {
   .signal-grid,
   .project-gallery,
   .testimonial-list {
+    grid-template-columns: 1fr;
+  }
+
+  .home-notes {
     grid-template-columns: 1fr;
   }
 
