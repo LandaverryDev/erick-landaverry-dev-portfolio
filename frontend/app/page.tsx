@@ -150,12 +150,6 @@ export default function Home() {
             <h1 className="profile-name">Erick Landaverry</h1>
             <p className="profile-role">WordPress & Digital Strategy</p>
 
-            <div className="profile-meta">
-              <span>Frontend depth</span>
-              <span>Full-site ownership</span>
-              <span>In-house to enterprise</span>
-            </div>
-
             <div className="profile-summary">
               I work across web strategy, frontend implementation, analytics, optimization, compliance, and
               the operational details that keep a site useful after launch.
@@ -220,6 +214,11 @@ export default function Home() {
                   <div className="signal-block signal-block-feature">
                     <span>Current focus</span>
                     <strong>Websites that are built, tracked, optimized, and supported after launch.</strong>
+                  </div>
+                  <div className="signal-pills">
+                    <span>Frontend depth</span>
+                    <span>Full-site ownership</span>
+                    <span>In-house to enterprise</span>
                   </div>
                   <div className="signal-grid">
                     <div className="signal-block">

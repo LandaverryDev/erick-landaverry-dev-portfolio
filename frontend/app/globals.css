@@ -218,14 +218,6 @@ textarea {
   font-weight: 600;
 }
 
-.profile-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-bottom: 1rem;
-}
-
-.profile-meta span,
 .contact-details span {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--line);
@@ -397,6 +389,7 @@ textarea {
 
 .home-signal,
 .signal-grid,
+.signal-pills,
 .two-column-layout,
 .resume-layout,
 .contact-layout {
@@ -428,6 +421,22 @@ textarea {
 
 .signal-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.signal-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.signal-pills span {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.92rem;
+  font-weight: 500;
 }
 
 .two-column-layout,
