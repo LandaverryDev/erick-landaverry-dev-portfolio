@@ -261,6 +261,12 @@ export default function Home() {
               id="about"
             >
               <div className="panel-inner about-panel">
+                <div className="about-atmosphere" aria-hidden="true">
+                  <span className="about-ring about-ring-large"></span>
+                  <span className="about-ring about-ring-small"></span>
+                  <span className="about-route"></span>
+                  <span className="about-mountains"></span>
+                </div>
                 <p className="panel-eyebrow">About me</p>
                 <h2>More than just frontend implementation.</h2>
 

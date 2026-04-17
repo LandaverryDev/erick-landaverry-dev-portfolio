@@ -561,6 +561,19 @@ textarea {
   position: relative;
 }
 
+.about-atmosphere,
+.about-ring,
+.about-route,
+.about-mountains {
+  position: absolute;
+  pointer-events: none;
+}
+
+.about-atmosphere {
+  inset: 0;
+  z-index: 0;
+}
+
 .about-panel::before,
 .about-panel::after {
   content: "";
@@ -571,26 +584,66 @@ textarea {
 .about-panel::before {
   inset: 0;
   background:
-    radial-gradient(circle at 82% 18%, rgba(193, 152, 76, 0.18), transparent 18%),
-    radial-gradient(circle at 75% 28%, rgba(193, 152, 76, 0.08), transparent 28%),
-    repeating-radial-gradient(
-      circle at 82% 18%,
-      rgba(214, 174, 96, 0.12) 0 1px,
-      transparent 1px 22px
-    );
-  opacity: 0.58;
+    linear-gradient(180deg, rgba(18, 14, 7, 0.16), transparent 35%),
+    radial-gradient(circle at 80% 18%, rgba(193, 152, 76, 0.16), transparent 20%);
+  opacity: 0.82;
 }
 
 .about-panel::after {
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(214, 174, 96, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 174, 96, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at 78% 24%, black, transparent 78%);
+  opacity: 0.28;
+}
+
+.about-ring {
+  border: 1px solid rgba(214, 174, 96, 0.28);
+  border-radius: 999px;
+}
+
+.about-ring-large {
+  top: 3.5rem;
+  right: 5%;
+  width: 24rem;
+  height: 24rem;
+  box-shadow:
+    0 0 0 1.2rem rgba(193, 152, 76, 0.05),
+    0 0 0 3rem rgba(193, 152, 76, 0.025);
+  opacity: 0.88;
+}
+
+.about-ring-small {
+  top: 9rem;
+  right: 11%;
+  width: 11rem;
+  height: 11rem;
+  opacity: 0.58;
+}
+
+.about-route {
+  top: 7.5rem;
+  right: 10%;
+  width: 18rem;
+  height: 9rem;
+  border-top: 1px dashed rgba(236, 198, 116, 0.4);
+  border-radius: 999px;
+  transform: rotate(-8deg);
+  opacity: 0.72;
+}
+
+.about-mountains {
   right: -4%;
   bottom: -8%;
-  width: 36rem;
-  height: 18rem;
+  width: 38rem;
+  height: 19rem;
   background:
-    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.36)),
-    radial-gradient(circle at top, rgba(118, 164, 110, 0.1), transparent 56%);
-  clip-path: polygon(0 100%, 12% 70%, 20% 76%, 31% 52%, 42% 64%, 53% 36%, 64% 58%, 76% 30%, 88% 54%, 100% 18%, 100% 100%);
-  opacity: 0.5;
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.38)),
+    radial-gradient(circle at top, rgba(118, 164, 110, 0.12), transparent 56%);
+  clip-path: polygon(0 100%, 10% 74%, 16% 80%, 28% 48%, 39% 66%, 49% 34%, 58% 57%, 69% 30%, 78% 44%, 88% 18%, 100% 46%, 100% 100%);
+  opacity: 0.72;
 }
 
 .about-story,
@@ -961,7 +1014,26 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .about-panel::after {
+  .about-ring-large {
+    width: 15rem;
+    height: 15rem;
+    top: 5.5rem;
+    right: -8%;
+  }
+
+  .about-ring-small {
+    width: 7rem;
+    height: 7rem;
+    top: 9rem;
+    right: 6%;
+  }
+
+  .about-route {
+    width: 11rem;
+    right: 0;
+  }
+
+  .about-mountains {
     width: 18rem;
     height: 10rem;
     right: -10%;
