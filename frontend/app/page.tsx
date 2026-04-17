@@ -189,15 +189,16 @@ export default function Home() {
             <article className={`content-panel ${activeSection === "home" ? "is-active" : ""}`} id="home">
               <div className="panel-inner panel-home">
                 <div className="home-copy">
-                  <p className="panel-eyebrow">Welcome</p>
-                  <h2>Senior web developer with WordPress depth and full-site ownership.</h2>
+                  <p className="panel-eyebrow">Senior Web Developer</p>
+                  <h2>More than build work. Real platform ownership.</h2>
                   <p>
-                    I lead websites from build to optimization, combining frontend execution, WordPress
-                    management, analytics, CRO, and operations to keep them aligned with business goals.
+                    I work across the parts of the website that usually live in separate conversations:
+                    frontend execution, WordPress management, analytics, optimization, compliance, launches,
+                    and ongoing platform support.
                   </p>
                   <p className="text-soft">
-                    The value is not just shipping pages. The value is building web platforms that can be
-                    measured, improved, supported, and trusted over time.
+                    That is why this home panel should communicate both sides of the role clearly: what gets
+                    built and what still needs to be owned after launch.
                   </p>
 
                   <div className="hero-actions">
@@ -211,32 +212,22 @@ export default function Home() {
                 </div>
 
                 <div className="home-signal">
-                  <div className="signal-block signal-block-feature">
-                    <span>Current focus</span>
-                    <strong>Websites that are built, tracked, optimized, and supported after launch.</strong>
+                  <div className="identity-panel identity-panel-build">
+                    <span>What I build</span>
+                    <strong>WordPress sites, landing pages, frontend systems, migrations, and integrations.</strong>
                   </div>
-                  <div className="signal-pills">
+                  <div className="identity-panel identity-panel-own">
+                    <span>What I own</span>
+                    <strong>GA4, GTM, VWO, CRO, hosting, compliance, and launch support after go-live.</strong>
+                  </div>
+                  <div className="identity-rail">
                     <span>Frontend depth</span>
                     <span>Full-site ownership</span>
                     <span>In-house to enterprise</span>
                   </div>
-                  <div className="signal-grid">
-                    <div className="signal-block">
-                      <span>Build</span>
-                      <strong>WordPress builds, landing pages, migrations, integrations.</strong>
-                    </div>
-                    <div className="signal-block">
-                      <span>Optimize</span>
-                      <strong>GA4, GTM, VWO, CRO, SEO-aware delivery.</strong>
-                    </div>
-                    <div className="signal-block">
-                      <span>Operate</span>
-                      <strong>Compliance, governance, hosting, and launch support.</strong>
-                    </div>
-                    <div className="signal-block">
-                      <span>Range</span>
-                      <strong>In-house, agency, small business, and enterprise teams.</strong>
-                    </div>
+                  <div className="identity-footnote">
+                    A stronger home direction for this site is showing both delivery and ownership up front,
+                    not hiding the operational side deeper in the resume.
                   </div>
                 </div>
               </div>

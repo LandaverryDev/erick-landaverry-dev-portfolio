@@ -388,8 +388,6 @@ textarea {
 }
 
 .home-signal,
-.signal-grid,
-.signal-pills,
 .two-column-layout,
 .resume-layout,
 .contact-layout {
@@ -397,39 +395,65 @@ textarea {
   gap: 1rem;
 }
 
-.signal-block {
-  padding: 1.2rem;
-}
-
-.signal-block-feature {
+.identity-panel,
+.identity-footnote {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
   background:
-    radial-gradient(circle at top right, rgba(32, 164, 243, 0.18), transparent 28%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
-    var(--surface-strong);
+    rgba(10, 21, 35, 0.84);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
 }
 
-.signal-block strong,
+.identity-panel {
+  padding: 1.3rem;
+}
+
+.identity-panel span,
+.identity-footnote,
 .service-card strong,
 .project-card-copy strong,
 .timeline-item strong,
 .testimonial-card strong {
-  display: block;
-  margin-top: 0.55rem;
-  font-size: 1.02rem;
   line-height: 1.55;
 }
 
-.signal-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.identity-panel span {
+  display: block;
+  color: #87d6ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
-.signal-pills {
+.identity-panel strong {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 1.08rem;
+}
+
+.identity-panel-build {
+  background:
+    radial-gradient(circle at top left, rgba(32, 164, 243, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    rgba(10, 21, 35, 0.84);
+}
+
+.identity-panel-own {
+  background:
+    radial-gradient(circle at top right, rgba(32, 164, 243, 0.14), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    rgba(10, 21, 35, 0.9);
+}
+
+.identity-rail {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
 }
 
-.signal-pills span {
+.identity-rail span {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -437,6 +461,11 @@ textarea {
   color: rgba(255, 255, 255, 0.84);
   font-size: 0.92rem;
   font-weight: 500;
+}
+
+.identity-footnote {
+  padding: 1rem 1.15rem;
+  color: var(--text-soft);
 }
 
 .two-column-layout,
