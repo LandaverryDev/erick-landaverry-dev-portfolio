@@ -256,13 +256,16 @@ export default function Home() {
               </div>
             </article>
 
-            <article className={`content-panel ${activeSection === "about" ? "is-active" : ""}`} id="about">
-              <div className="panel-inner">
+            <article
+              className={`content-panel about-panel-shell ${activeSection === "about" ? "is-active" : ""}`}
+              id="about"
+            >
+              <div className="panel-inner about-panel">
                 <p className="panel-eyebrow">About me</p>
                 <h2>More than just frontend implementation.</h2>
 
                 <div className="two-column-layout">
-                  <div className="text-stack">
+                  <div className="text-stack about-story">
                     <p>
                       I work across the technical and operational parts of the site that often live in separate
                       conversations: design implementation, CMS management, analytics, optimization, compliance,
@@ -272,14 +275,38 @@ export default function Home() {
                       That is why this portfolio is framed around ownership. My experience spans the actual build,
                       the systems connected to it, and the post-launch upkeep that keeps sites useful.
                     </p>
+
+                    <div className="about-traits">
+                      <span>Craft</span>
+                      <span>Strategy</span>
+                      <span>Consistency</span>
+                      <span>Patience</span>
+                    </div>
                   </div>
 
-                  <div className="service-grid">
-                    {services.map((service) => (
-                      <div className="service-card" key={service}>
-                        <strong>{service}</strong>
-                      </div>
-                    ))}
+                  <div className="about-play">
+                    <div className="about-play-header">
+                      <span>Outside of work</span>
+                      <strong>The fun side still says a lot about how I think.</strong>
+                    </div>
+
+                    <div className="interest-card interest-card-lotr">
+                      <span>Lord of the Rings</span>
+                      <strong>I like worlds with depth, detail, history, and strong long-form storytelling.</strong>
+                      <p>
+                        The appeal for me is the craft behind it: atmosphere, consistency, and the feeling that
+                        every part belongs to a bigger system.
+                      </p>
+                    </div>
+
+                    <div className="interest-card interest-card-golf">
+                      <span>Golf</span>
+                      <strong>It rewards patience, adjustment, rhythm, and small improvements over time.</strong>
+                      <p>
+                        That mindset maps well to the way I approach websites too: build carefully, measure
+                        honestly, and keep refining.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
