@@ -86,6 +86,40 @@ const testimonials = [
   },
 ];
 
+const aboutPrinciples = [
+  {
+    title: "Craft",
+    detail: "Build websites that stay useful, measurable, and maintainable after launch.",
+  },
+  {
+    title: "Strategy",
+    detail: "Connect design, analytics, optimization, and platform decisions to business goals.",
+  },
+  {
+    title: "Consistency",
+    detail: "Treat launches as the start of refinement, not the finish line.",
+  },
+  {
+    title: "Patience",
+    detail: "Improve performance, UX, and operations steadily over time instead of chasing noise.",
+  },
+];
+
+const aboutFocusAreas = [
+  "WordPress development and management",
+  "CMS implementation and scalable content support",
+  "Performance, accessibility, and frontend QA",
+  "GA4, GTM, reporting, and measurement quality",
+  "CRO, VWO, and testing-driven iteration",
+  "Site launches, migrations, automations, and upkeep",
+];
+
+const aboutSnapshot = [
+  "Experience across in-house, agency, small business, and enterprise teams",
+  "Hands-on coordination with offshore and contractor support",
+  "Comfortable owning both build work and post-launch operations",
+];
+
 function resolveInitialSection(): SectionId {
   if (typeof window === "undefined") {
     return "home";
@@ -263,28 +297,43 @@ export default function Home() {
                     <div className="about-card-head">
                       <span>How I work</span>
                     </div>
-                    <p>
-                      I am a senior web developer who works across the parts of the website that often live in
-                      separate conversations: frontend implementation, WordPress management, analytics,
-                      optimization, compliance, and ongoing operational support.
-                    </p>
-                    <p>
-                      That is why this portfolio is framed around ownership. My experience spans the actual build,
-                      the systems connected to it, and the work required after launch to keep a site measurable,
-                      useful, and aligned with business goals.
-                    </p>
-                    <p>
+                    <div className="about-story-copy">
+                      <p>
+                        I am a senior web developer who works across the parts of the website that often live in
+                        separate conversations: frontend implementation, WordPress management, analytics,
+                        optimization, compliance, and ongoing operational support.
+                      </p>
+                      <p>
+                        That is why this portfolio is framed around ownership. My experience spans the build
+                        itself, the systems connected to it, and the work required after launch to keep a site
+                        measurable, useful, and aligned with business goals.
+                      </p>
+                    </div>
+
+                    <div className="about-story-breakdown">
+                      <article>
+                        <strong>Own the build</strong>
+                        <p>Frontend execution, CMS implementation, migrations, launches, and platform changes.</p>
+                      </article>
+                      <article>
+                        <strong>Refine after launch</strong>
+                        <p>Analytics, CRO, accessibility, cookie governance, and ongoing operational support.</p>
+                      </article>
+                      <article>
+                        <strong>Work across teams</strong>
+                        <p>Comfortable bridging strategy, marketing, stakeholders, and distributed development support.</p>
+                      </article>
+                    </div>
+
+                    <div className="about-story-note">
                       Outside of work, I tend to gravitate toward things that reward immersion, patience, and
-                      refinement. Lord of the Rings is one of those for me because of its atmosphere, depth, and
-                      world-building. Golf is another because it rewards rhythm, adjustment, and steady progress.
-                      Both say something real about how I approach my work too.
-                    </p>
+                      refinement. Lord of the Rings and golf both reflect that for me in different ways.
+                    </div>
 
                     <div className="about-traits">
-                      <span>Craft</span>
-                      <span>Strategy</span>
-                      <span>Consistency</span>
-                      <span>Patience</span>
+                      {aboutPrinciples.map((item) => (
+                        <span key={item.title}>{item.title}</span>
+                      ))}
                     </div>
                   </section>
 
@@ -292,11 +341,14 @@ export default function Home() {
                     <div className="about-card-head">
                       <span>Core Principles</span>
                     </div>
-                    <ul className="about-list">
-                      <li>Build websites that stay useful after launch.</li>
-                      <li>Keep performance, accessibility, and measurement connected.</li>
-                      <li>Support business goals without making the build harder than it needs to be.</li>
-                    </ul>
+                    <div className="about-principle-stack">
+                      {aboutPrinciples.map((item) => (
+                        <article className="about-principle" key={item.title}>
+                          <strong>{item.title}</strong>
+                          <p>{item.detail}</p>
+                        </article>
+                      ))}
+                    </div>
                   </section>
 
                   <section className="about-card about-card-list">
@@ -304,9 +356,9 @@ export default function Home() {
                       <span>What I do</span>
                     </div>
                     <ul className="about-list">
-                      <li>WordPress development and management</li>
-                      <li>GA4, GTM, CRO, and optimization support</li>
-                      <li>Site launches, migrations, integrations, and upkeep</li>
+                      {aboutFocusAreas.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
                     </ul>
                   </section>
 
@@ -315,9 +367,9 @@ export default function Home() {
                       <span>Experience Snapshot</span>
                     </div>
                     <ul className="about-list">
-                      <li>In-house, agency, small business, and enterprise environments</li>
-                      <li>Frontend depth with operational ownership</li>
-                      <li>Cross-functional work that connects strategy and execution</li>
+                      {aboutSnapshot.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
                     </ul>
                   </section>
 

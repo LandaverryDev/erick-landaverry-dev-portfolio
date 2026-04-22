@@ -653,6 +653,51 @@ textarea {
   grid-row: span 2;
 }
 
+.about-story-copy {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.about-story-copy p {
+  margin: 0;
+  color: rgba(244, 247, 251, 0.9);
+  line-height: 1.76;
+}
+
+.about-story-breakdown {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+}
+
+.about-story-breakdown article {
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.9rem;
+  background: rgba(8, 14, 22, 0.3);
+}
+
+.about-story-breakdown strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: rgba(255, 248, 231, 0.96);
+  font-size: 0.95rem;
+}
+
+.about-story-breakdown p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.about-story-note {
+  margin-top: 1rem;
+  padding-left: 0.95rem;
+  border-left: 1px solid rgba(240, 201, 119, 0.26);
+  color: rgba(255, 233, 199, 0.84);
+  line-height: 1.72;
+}
+
 .about-card-list,
 .about-card-mindset {
   padding: 1.15rem;
@@ -695,6 +740,31 @@ textarea {
   border-radius: 999px;
   background: #f0c977;
   box-shadow: 0 0 0 0.22rem rgba(240, 201, 119, 0.08);
+}
+
+.about-principle-stack {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.about-principle {
+  padding: 0.9rem 0.95rem;
+  border: 1px solid rgba(240, 201, 119, 0.1);
+  border-radius: 0.9rem;
+  background: rgba(8, 14, 22, 0.3);
+}
+
+.about-principle strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: rgba(255, 240, 212, 0.95);
+  font-size: 0.94rem;
+}
+
+.about-principle p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.6;
 }
 
 .about-card-mindset blockquote {
