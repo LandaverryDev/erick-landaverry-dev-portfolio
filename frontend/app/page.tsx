@@ -261,18 +261,20 @@ export default function Home() {
                 <div className="about-layout">
                   <div className="text-stack about-story">
                     <p>
-                      I work across the technical and operational parts of the site that often live in separate
-                      conversations: design implementation, CMS management, analytics, optimization, compliance,
-                      and ongoing platform support.
+                      I am a senior web developer who works across the parts of the website that often live in
+                      separate conversations: frontend implementation, WordPress management, analytics,
+                      optimization, compliance, and ongoing operational support.
                     </p>
                     <p>
                       That is why this portfolio is framed around ownership. My experience spans the actual build,
-                      the systems connected to it, and the post-launch upkeep that keeps sites useful.
+                      the systems connected to it, and the work required after launch to keep a site measurable,
+                      useful, and aligned with business goals.
                     </p>
                     <p>
                       Outside of work, I tend to gravitate toward things that reward immersion, patience, and
-                      craft, whether that is Lord of the Rings or a round of golf. That same appreciation for
-                      detail and steady refinement shows up in how I build and improve websites.
+                      refinement. Lord of the Rings is one of those for me because of its atmosphere, depth, and
+                      world-building. Golf is another because it rewards rhythm, adjustment, and steady progress.
+                      Both say something real about how I approach my work too.
                     </p>
 
                     <div className="about-traits">
