@@ -121,14 +121,6 @@ const aboutPersonalSide = [
     title: "Golf",
     detail: "It keeps me honest about rhythm, patience, adjustment, and improving over time.",
   },
-  {
-    title: "How that shows up in work",
-    detail: "I tend to value detail, consistency, and long-term refinement over rushed delivery.",
-  },
-  {
-    title: "Outside of work",
-    detail: "I naturally gravitate toward things that reward focus, immersion, and steady improvement.",
-  },
 ];
 
 function resolveInitialSection(): SectionId {
@@ -359,7 +351,7 @@ export default function Home() {
                     </ul>
                   </section>
 
-                  <section className="about-card about-card-list">
+                  <section className="about-card about-card-list about-card-personal">
                     <div className="about-card-head">
                       <span>Personal Side</span>
                     </div>
