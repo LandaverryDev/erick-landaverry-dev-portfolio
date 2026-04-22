@@ -258,8 +258,11 @@ export default function Home() {
                 <p className="panel-eyebrow">About me</p>
                 <h2>More than just frontend implementation.</h2>
 
-                <div className="about-layout">
-                  <div className="text-stack about-story">
+                <div className="about-grid">
+                  <section className="about-card about-card-story">
+                    <div className="about-card-head">
+                      <span>How I work</span>
+                    </div>
                     <p>
                       I am a senior web developer who works across the parts of the website that often live in
                       separate conversations: frontend implementation, WordPress management, analytics,
@@ -283,7 +286,60 @@ export default function Home() {
                       <span>Consistency</span>
                       <span>Patience</span>
                     </div>
-                  </div>
+                  </section>
+
+                  <section className="about-card about-card-list">
+                    <div className="about-card-head">
+                      <span>Core Principles</span>
+                    </div>
+                    <ul className="about-list">
+                      <li>Build websites that stay useful after launch.</li>
+                      <li>Keep performance, accessibility, and measurement connected.</li>
+                      <li>Support business goals without making the build harder than it needs to be.</li>
+                    </ul>
+                  </section>
+
+                  <section className="about-card about-card-list">
+                    <div className="about-card-head">
+                      <span>What I do</span>
+                    </div>
+                    <ul className="about-list">
+                      <li>WordPress development and management</li>
+                      <li>GA4, GTM, CRO, and optimization support</li>
+                      <li>Site launches, migrations, integrations, and upkeep</li>
+                    </ul>
+                  </section>
+
+                  <section className="about-card about-card-list">
+                    <div className="about-card-head">
+                      <span>Experience Snapshot</span>
+                    </div>
+                    <ul className="about-list">
+                      <li>In-house, agency, small business, and enterprise environments</li>
+                      <li>Frontend depth with operational ownership</li>
+                      <li>Cross-functional work that connects strategy and execution</li>
+                    </ul>
+                  </section>
+
+                  <section className="about-card about-card-mindset">
+                    <div className="about-card-head">
+                      <span>Mindset</span>
+                    </div>
+                    <blockquote>
+                      The best websites are not just built. They are refined over time with intention, detail,
+                      and care.
+                    </blockquote>
+                  </section>
+                </div>
+
+                <div className="about-footer">
+                  <p>
+                    I bring a balance of technical depth and strategic thinking, with a focus on building
+                    websites that are fast, complete, measurable, and built to grow.
+                  </p>
+                  <button className="button-secondary" type="button" onClick={() => handleSectionChange("projects")}>
+                    View my work
+                  </button>
                 </div>
               </div>
             </article>
