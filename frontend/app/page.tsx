@@ -355,6 +355,7 @@ export default function Home() {
                     <div className="about-card-head">
                       <span>Personal Side</span>
                     </div>
+                    <p className="about-personal-meta">Originally from Utah, now living in Dallas.</p>
                     <div className="about-principle-stack about-principle-stack-grid">
                       {aboutPersonalSide.map((item) => (
                         <article className="about-principle" key={item.title}>

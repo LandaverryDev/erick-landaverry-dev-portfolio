@@ -720,6 +720,13 @@ textarea {
   text-transform: uppercase;
 }
 
+.about-personal-meta {
+  margin: -0.15rem 0 0.95rem;
+  color: rgba(255, 233, 199, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 .about-list {
   margin: 0;
   padding: 0;
