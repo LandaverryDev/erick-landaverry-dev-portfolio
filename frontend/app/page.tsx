@@ -125,6 +125,10 @@ const aboutPersonalSide = [
     title: "How that shows up in work",
     detail: "I tend to value detail, consistency, and long-term refinement over rushed delivery.",
   },
+  {
+    title: "Outside of work",
+    detail: "I naturally gravitate toward things that reward focus, immersion, and steady improvement.",
+  },
 ];
 
 function resolveInitialSection(): SectionId {
@@ -359,7 +363,7 @@ export default function Home() {
                     <div className="about-card-head">
                       <span>Personal Side</span>
                     </div>
-                    <div className="about-principle-stack">
+                    <div className="about-principle-stack about-principle-stack-grid">
                       {aboutPersonalSide.map((item) => (
                         <article className="about-principle" key={item.title}>
                           <strong>{item.title}</strong>
