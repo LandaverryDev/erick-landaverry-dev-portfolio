@@ -105,19 +105,11 @@ const aboutPrinciples = [
   },
 ];
 
-const aboutFocusAreas = [
+const aboutWhatIDo = [
   "WordPress development and management",
   "CMS implementation and scalable content support",
   "Performance, accessibility, and frontend QA",
   "GA4, GTM, reporting, and measurement quality",
-  "CRO, VWO, and testing-driven iteration",
-  "Site launches, migrations, automations, and upkeep",
-];
-
-const aboutSnapshot = [
-  "Experience across in-house, agency, small business, and enterprise teams",
-  "Hands-on coordination with offshore and contractor support",
-  "Comfortable owning both build work and post-launch operations",
 ];
 
 function resolveInitialSection(): SectionId {
@@ -339,6 +331,17 @@ export default function Home() {
 
                   <section className="about-card about-card-list">
                     <div className="about-card-head">
+                      <span>What I do</span>
+                    </div>
+                    <ul className="about-list">
+                      {aboutWhatIDo.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+
+                  <section className="about-card about-card-list">
+                    <div className="about-card-head">
                       <span>Core Principles</span>
                     </div>
                     <div className="about-principle-stack">
@@ -349,38 +352,6 @@ export default function Home() {
                         </article>
                       ))}
                     </div>
-                  </section>
-
-                  <section className="about-card about-card-list">
-                    <div className="about-card-head">
-                      <span>What I do</span>
-                    </div>
-                    <ul className="about-list">
-                      {aboutFocusAreas.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-
-                  <section className="about-card about-card-list">
-                    <div className="about-card-head">
-                      <span>Experience Snapshot</span>
-                    </div>
-                    <ul className="about-list">
-                      {aboutSnapshot.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </section>
-
-                  <section className="about-card about-card-mindset">
-                    <div className="about-card-head">
-                      <span>Mindset</span>
-                    </div>
-                    <blockquote>
-                      The best websites are not just built. They are refined over time with intention, detail,
-                      and care.
-                    </blockquote>
                   </section>
                 </div>
 
