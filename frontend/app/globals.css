@@ -563,12 +563,7 @@ textarea {
   position: relative;
 }
 
-.about-atmosphere,
-.about-sky,
-.about-clouds,
-.about-range,
-.about-ridge,
-.about-fellowship {
+.about-atmosphere {
   position: absolute;
   pointer-events: none;
 }
@@ -576,6 +571,13 @@ textarea {
 .about-atmosphere {
   inset: 0;
   z-index: 0;
+  background-image:
+    linear-gradient(180deg, rgba(4, 8, 14, 0.18), rgba(4, 8, 14, 0.1)),
+    url("/about-me-bg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.92;
+  filter: saturate(0.95) brightness(0.74);
 }
 
 .about-panel::before,
@@ -588,74 +590,17 @@ textarea {
 .about-panel::before {
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(5, 10, 18, 0.16), rgba(5, 10, 18, 0.08) 50%, rgba(5, 10, 18, 0.18)),
-    radial-gradient(circle at 30% 24%, rgba(255, 255, 255, 0.06), transparent 26%);
+    linear-gradient(90deg, rgba(3, 8, 14, 0.82) 0%, rgba(3, 8, 14, 0.68) 36%, rgba(3, 8, 14, 0.38) 62%, rgba(3, 8, 14, 0.22) 100%),
+    linear-gradient(180deg, rgba(5, 10, 18, 0.16), rgba(5, 10, 18, 0.08) 50%, rgba(5, 10, 18, 0.18));
   opacity: 1;
 }
 
 .about-panel::after {
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%),
-    linear-gradient(0deg, rgba(6, 10, 16, 0.42), transparent 32%);
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.09), transparent 20%),
+    linear-gradient(180deg, transparent 56%, rgba(4, 8, 14, 0.18) 76%, rgba(4, 8, 14, 0.44) 100%);
   opacity: 1;
-}
-
-.about-sky {
-  inset: 0;
-  background:
-    radial-gradient(circle at 52% 34%, rgba(255, 255, 255, 0.88), rgba(219, 222, 240, 0.42) 12%, transparent 28%),
-    linear-gradient(180deg, rgba(31, 32, 43, 0.92) 0%, rgba(74, 75, 96, 0.72) 34%, rgba(214, 217, 229, 0.62) 58%, rgba(236, 237, 240, 0.28) 70%, transparent 100%);
-  opacity: 0.88;
-}
-
-.about-clouds {
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 24%, rgba(255, 255, 255, 0.22), transparent 24%),
-    radial-gradient(circle at 48% 22%, rgba(255, 255, 255, 0.2), transparent 20%),
-    radial-gradient(circle at 68% 18%, rgba(255, 255, 255, 0.16), transparent 22%),
-    linear-gradient(180deg, rgba(15, 17, 27, 0.14), transparent 28%);
-  filter: blur(14px);
-  opacity: 0.72;
-}
-
-.about-range {
-  left: -3%;
-  right: -3%;
-  bottom: 18%;
-  height: 52%;
-  background:
-    linear-gradient(180deg, rgba(250, 251, 255, 0.2), rgba(35, 39, 56, 0.14) 28%, transparent 46%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 520' preserveAspectRatio='none'%3E%3Cg fill='none'%3E%3Cpath d='M0 410 L130 350 L220 370 L330 220 L420 315 L520 180 L650 330 L760 200 L890 320 L1030 165 L1160 310 L1270 205 L1380 300 L1490 240 L1600 340 L1600 520 L0 520 Z' fill='rgba(41,48,69,0.78)'/%3E%3Cpath d='M0 430 L120 395 L235 405 L350 260 L445 355 L540 230 L665 355 L770 250 L900 365 L1040 212 L1165 346 L1270 248 L1385 336 L1500 285 L1600 360 L1600 520 L0 520 Z' fill='rgba(90,100,128,0.52)'/%3E%3Cpath d='M0 445 L150 430 L245 438 L360 302 L452 382 L558 282 L680 388 L790 304 L910 398 L1050 260 L1172 384 L1280 286 L1398 372 L1510 330 L1600 388 L1600 520 L0 520 Z' fill='rgba(210,214,227,0.32)'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.92;
-}
-
-.about-ridge {
-  left: -4%;
-  right: -4%;
-  bottom: -2%;
-  height: 28%;
-  background:
-    linear-gradient(180deg, rgba(52, 79, 44, 0.05), rgba(18, 35, 18, 0.8)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 260' preserveAspectRatio='none'%3E%3Cpath d='M0 220 C120 180 230 210 360 188 C500 165 600 195 740 170 C860 150 980 186 1110 162 C1245 136 1365 170 1495 144 C1545 136 1574 132 1600 126 L1600 260 L0 260 Z' fill='rgba(14,33,14,0.95)'/%3E%3Cpath d='M0 228 C120 188 230 216 360 194 C500 170 600 200 740 176 C860 156 980 192 1110 168 C1245 142 1365 176 1495 150 C1545 142 1574 138 1600 132 L1600 260 L0 260 Z' fill='rgba(54,86,46,0.68)'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.96;
-}
-
-.about-fellowship {
-  left: 12%;
-  right: 10%;
-  bottom: 10%;
-  height: 23%;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 220' preserveAspectRatio='none'%3E%3Cg fill='rgba(7,10,8,0.95)'%3E%3Cpath d='M48 182 c18 -22 30 -44 36 -70 l18 4 c-8 28 -18 49 -32 66 l22 0 c16 0 16 22 0 22 l-54 0 c-16 0 -14 -10 10 -22 z'/%3E%3Cellipse cx='160' cy='176' rx='56' ry='24'/%3E%3Cpath d='M232 176 l22 -60 12 0 10 60 z'/%3E%3Cpath d='M360 180 c16 -18 28 -42 34 -78 l18 4 c-4 32 -12 56 -24 74 l24 0 c16 0 16 22 0 22 l-58 0 c-16 0 -14 -12 6 -22 z'/%3E%3Cpath d='M520 178 l16 -72 18 0 16 72 z'/%3E%3Cpath d='M676 178 l14 -86 20 0 14 86 z'/%3E%3Cpath d='M842 184 l0 -92 18 0 0 92 z'/%3E%3Cpath d='M900 178 l46 -72 14 10 -42 62 z'/%3E%3Cpath d='M1036 178 l18 -86 20 0 18 86 z'/%3E%3Cpath d='M1188 182 c10 -16 18 -36 22 -64 l16 2 c-2 28 -8 48 -18 62 l22 0 c14 0 14 20 0 20 l-50 0 c-14 0 -14 -10 8 -20 z'/%3E%3Cpath d='M1342 184 l6 -90 22 0 4 90 z'/%3E%3Cpath d='M1328 106 l64 0 0 12 -64 0 z'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom center;
-  opacity: 0.88;
 }
 
 .about-story {
@@ -977,22 +922,8 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .about-range {
-    bottom: 22%;
-    height: 42%;
-  }
-
-  .about-fellowship {
-    left: 6%;
-    right: 6%;
-    bottom: 12%;
-    height: 15%;
-  }
-
-  .about-ridge {
-    left: -8%;
-    right: -8%;
-    height: 10rem;
+  .about-atmosphere {
+    background-position: 72% center;
   }
 
   .home-notes {
