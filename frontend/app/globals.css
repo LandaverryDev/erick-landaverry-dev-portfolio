@@ -572,12 +572,13 @@ textarea {
   inset: 0;
   z-index: 0;
   background-image:
-    linear-gradient(180deg, rgba(4, 8, 14, 0.18), rgba(4, 8, 14, 0.1)),
+    linear-gradient(180deg, rgba(4, 8, 14, 0.06), rgba(4, 8, 14, 0.02)),
     url("/about-me-bg.png");
   background-size: cover;
-  background-position: center;
-  opacity: 0.92;
-  filter: saturate(0.95) brightness(0.74);
+  background-position: right center;
+  background-repeat: no-repeat;
+  opacity: 0.98;
+  filter: saturate(1) brightness(0.95);
 }
 
 .about-panel::before,
@@ -590,16 +591,16 @@ textarea {
 .about-panel::before {
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(3, 8, 14, 0.82) 0%, rgba(3, 8, 14, 0.68) 36%, rgba(3, 8, 14, 0.38) 62%, rgba(3, 8, 14, 0.22) 100%),
-    linear-gradient(180deg, rgba(5, 10, 18, 0.16), rgba(5, 10, 18, 0.08) 50%, rgba(5, 10, 18, 0.18));
+    linear-gradient(90deg, rgba(3, 8, 14, 0.8) 0%, rgba(3, 8, 14, 0.6) 28%, rgba(3, 8, 14, 0.2) 56%, rgba(3, 8, 14, 0.04) 100%),
+    linear-gradient(180deg, rgba(5, 10, 18, 0.1), rgba(5, 10, 18, 0.03) 50%, rgba(5, 10, 18, 0.12));
   opacity: 1;
 }
 
 .about-panel::after {
   inset: 0;
   background:
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.09), transparent 20%),
-    linear-gradient(180deg, transparent 56%, rgba(4, 8, 14, 0.18) 76%, rgba(4, 8, 14, 0.44) 100%);
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.18), transparent 18%),
+    linear-gradient(180deg, transparent 54%, rgba(4, 8, 14, 0.08) 76%, rgba(4, 8, 14, 0.28) 100%);
   opacity: 1;
 }
 
