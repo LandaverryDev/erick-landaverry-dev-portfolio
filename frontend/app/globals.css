@@ -756,6 +756,14 @@ textarea {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.about-card-personal .about-principle-stack-grid {
+  align-items: stretch;
+}
+
+.about-card-personal .about-principle {
+  height: 100%;
+}
+
 .about-principle {
   padding: 0.9rem 0.95rem;
   border: 1px solid rgba(240, 201, 119, 0.1);
@@ -776,7 +784,7 @@ textarea {
   line-height: 1.6;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 640px) {
   .about-principle-stack-grid {
     grid-template-columns: minmax(0, 1fr);
   }
