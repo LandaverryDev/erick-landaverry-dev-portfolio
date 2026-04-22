@@ -112,6 +112,21 @@ const aboutWhatIDo = [
   "GA4, GTM, reporting, and measurement quality",
 ];
 
+const aboutPersonalSide = [
+  {
+    title: "Lord of the Rings",
+    detail: "I like stories and worlds with depth, atmosphere, and a clear sense of craft behind them.",
+  },
+  {
+    title: "Golf",
+    detail: "It keeps me honest about rhythm, patience, adjustment, and improving over time.",
+  },
+  {
+    title: "How that shows up in work",
+    detail: "I tend to value detail, consistency, and long-term refinement over rushed delivery.",
+  },
+];
+
 function resolveInitialSection(): SectionId {
   if (typeof window === "undefined") {
     return "home";
@@ -342,10 +357,10 @@ export default function Home() {
 
                   <section className="about-card about-card-list">
                     <div className="about-card-head">
-                      <span>Core Principles</span>
+                      <span>Personal Side</span>
                     </div>
                     <div className="about-principle-stack">
-                      {aboutPrinciples.map((item) => (
+                      {aboutPersonalSide.map((item) => (
                         <article className="about-principle" key={item.title}>
                           <strong>{item.title}</strong>
                           <p>{item.detail}</p>
