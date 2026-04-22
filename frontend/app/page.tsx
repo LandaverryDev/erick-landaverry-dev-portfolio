@@ -255,10 +255,11 @@ export default function Home() {
             >
               <div className="panel-inner about-panel">
                 <div className="about-atmosphere" aria-hidden="true">
-                  <span className="about-ring about-ring-large"></span>
-                  <span className="about-ring about-ring-small"></span>
-                  <span className="about-route"></span>
-                  <span className="about-mountains"></span>
+                  <span className="about-sky"></span>
+                  <span className="about-clouds"></span>
+                  <span className="about-range"></span>
+                  <span className="about-ridge"></span>
+                  <span className="about-fellowship"></span>
                 </div>
                 <p className="panel-eyebrow">About me</p>
                 <h2>More than just frontend implementation.</h2>
