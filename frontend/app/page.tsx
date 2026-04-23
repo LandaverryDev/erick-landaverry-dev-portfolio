@@ -389,7 +389,7 @@ export default function Home() {
                 <p className="panel-eyebrow">Skills</p>
                 <h2>Core competencies and technical depth.</h2>
 
-                <div className="resume-stack">
+                <div className="resume-stack skills-layout">
                   <section className="resume-block">
                     <div className="resume-block-header">
                       <h3>Core Competencies</h3>
