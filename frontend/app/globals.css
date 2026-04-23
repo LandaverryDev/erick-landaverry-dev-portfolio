@@ -805,28 +805,6 @@ textarea {
   line-height: 1.7;
 }
 
-.about-footer {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1rem;
-  background:
-    linear-gradient(180deg, rgba(5, 10, 16, 0.42), rgba(5, 10, 16, 0.68)),
-    rgba(8, 14, 22, 0.28);
-}
-
-.about-footer p {
-  margin: 0;
-  color: var(--text-soft);
-  line-height: 1.7;
-}
-
 .service-grid,
 .highlight-list,
 .testimonial-list {

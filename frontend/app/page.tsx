@@ -363,11 +363,6 @@ export default function Home() {
                   </section>
                 </div>
 
-                <div className="about-footer">
-                  <button className="button-secondary" type="button" onClick={() => handleSectionChange("projects")}>
-                    View my work
-                  </button>
-                </div>
               </div>
             </article>
 
