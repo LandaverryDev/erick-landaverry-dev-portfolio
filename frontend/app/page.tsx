@@ -446,15 +446,17 @@ export default function Home() {
                     <div className="resume-block-header">
                       <h3>Professional Experience</h3>
                     </div>
-                    <div className="timeline-list">
+                    <div className="experience-grid">
                       {experience.map((item) => (
-                        <article className="timeline-item" key={item.role}>
-                          <span>{item.years}</span>
-                          <div>
-                            <strong>{item.role}</strong>
-                            <p className="timeline-company">{item.company}</p>
-                            <p>{item.summary}</p>
+                        <article className="experience-card" key={item.role}>
+                          <div className="experience-card-head">
+                            <div>
+                              <strong>{item.role}</strong>
+                              <p className="timeline-company">{item.company}</p>
+                            </div>
+                            <span className="experience-card-date">{item.years}</span>
                           </div>
+                          <p className="experience-card-summary">{item.summary}</p>
                         </article>
                       ))}
                     </div>
