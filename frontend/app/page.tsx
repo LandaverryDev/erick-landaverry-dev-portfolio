@@ -278,10 +278,6 @@ export default function Home() {
                     <span>Full-site ownership</span>
                     <span>In-house to enterprise</span>
                   </div>
-                  <div className="identity-footnote">
-                    A stronger home direction for this site is showing both delivery and ownership up front,
-                    not hiding the operational side deeper in the resume.
-                  </div>
                 </div>
               </div>
             </article>
