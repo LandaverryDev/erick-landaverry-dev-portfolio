@@ -50,10 +50,37 @@ const education = [
 ];
 
 const skills = [
-  { label: "WordPress", value: "94%" },
-  { label: "Frontend Execution", value: "91%" },
-  { label: "GA4 / GTM", value: "88%" },
-  { label: "CRO / VWO", value: "84%" },
+  {
+    category: "Languages and Frameworks",
+    items: [
+      "PHP",
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "SCSS",
+      "Bootstrap",
+      "Node.js",
+      "jQuery",
+      "MySQL",
+      "Third-party API integrations",
+    ],
+  },
+  {
+    category: "Tools and Platforms",
+    items: ["WordPress", "Git/GitHub", "Divi", "Elementor", "WPBakery", "WPEngine", "Flywheel"],
+  },
+  {
+    category: "Design and Development",
+    items: ["Figma", "Adobe XD", "Visual Studio Code", "Flexbox/CSS Grid", "A/B Testing"],
+  },
+  {
+    category: "Server Management",
+    items: ["DNS", "cPanel/WHM", "Pantheon", "WPEngine", "Local by Flywheel", "Hostinger", "Caching", "Uptime"],
+  },
+  {
+    category: "Analytics and SEO",
+    items: ["Google Analytics", "Google Tag Manager", "SEO best practices", "SEMRush"],
+  },
 ];
 
 const projects = [
@@ -83,25 +110,6 @@ const testimonials = [
       "The final version will highlight ownership, strategy, delivery, and cross-functional support.",
     name: "Future Stakeholder Quote",
     role: "Placeholder",
-  },
-];
-
-const aboutPrinciples = [
-  {
-    title: "Craft",
-    detail: "Build websites that stay useful, measurable, and maintainable after launch.",
-  },
-  {
-    title: "Strategy",
-    detail: "Connect design, analytics, optimization, and platform decisions to business goals.",
-  },
-  {
-    title: "Consistency",
-    detail: "Treat launches as the start of refinement, not the finish line.",
-  },
-  {
-    title: "Patience",
-    detail: "Improve performance, UX, and operations steadily over time instead of chasing noise.",
   },
 ];
 
@@ -394,17 +402,13 @@ export default function Home() {
                     </div>
 
                     <h3>Skills</h3>
-                    <div className="skill-list">
+                    <div className="skill-category-list">
                       {skills.map((skill) => (
-                        <div className="skill-row" key={skill.label}>
-                          <div className="skill-head">
-                            <span>{skill.label}</span>
-                            <strong>{skill.value}</strong>
-                          </div>
-                          <div className="skill-bar">
-                            <div className="skill-fill" style={{ width: skill.value }}></div>
-                          </div>
-                        </div>
+                        <article className="skill-category-card" key={skill.category}>
+                          <p>
+                            <strong>{skill.category}:</strong> {skill.items.join(", ")}
+                          </p>
+                        </article>
                       ))}
                     </div>
                   </section>

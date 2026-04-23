@@ -812,7 +812,7 @@ textarea {
 }
 
 .timeline-list,
-.skill-list {
+.skill-category-list {
   display: grid;
   gap: 1rem;
 }
@@ -833,29 +833,21 @@ textarea {
   margin: 0;
 }
 
-.skill-row {
-  display: grid;
-  gap: 0.55rem;
+.skill-category-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, 0.03);
 }
 
-.skill-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+.skill-category-card p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.7;
 }
 
-.skill-bar {
-  height: 0.55rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #20a4f3, #77daff);
+.skill-category-card strong {
+  color: rgba(255, 255, 255, 0.96);
 }
 
 .project-filter {
