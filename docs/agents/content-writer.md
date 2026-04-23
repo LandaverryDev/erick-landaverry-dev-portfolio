@@ -46,7 +46,7 @@ Own the written content for this headless WordPress portfolio and resume site. P
 - Experience entries should emphasize scope, impact, relevant technologies, and craft.
 - Where accurate, highlight cross-functional leadership, digital strategy input, stakeholder communication, and full-site ownership.
 - Where accurate, highlight leadership of offshore teams, contractor developers, and distributed execution.
-- Where accurate, include practical AI usage in business workflows, including ChatGPT Enterprise adoption and AI champion responsibilities, without making the site sound trend-chasing.
+- Where accurate, include practical AI usage in business workflows, including experience with ChatGPT Enterprise and Claude Code Enterprise, plus AI champion responsibilities where relevant, without making the site sound trend-chasing.
 - Skills should be grouped logically and only include tools the user can credibly defend in an interview.
 - Resume-style content should read like a real resume, not a blog post or sales page.
 - Showcase performance, interaction quality, accessibility, responsiveness, and implementation thinking where they are true strengths.
