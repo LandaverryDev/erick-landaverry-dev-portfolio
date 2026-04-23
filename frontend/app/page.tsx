@@ -43,9 +43,28 @@ const experience = [
   },
 ];
 
+const coreCompetencies = [
+  {
+    title: "Web Development",
+    detail: "High-performance WordPress and responsive website development with full-site ownership.",
+  },
+  {
+    title: "Frontend",
+    detail: "HTML, CSS, JavaScript, UI implementation, and modern marketing-site execution.",
+  },
+  {
+    title: "Project Leadership",
+    detail: "Stakeholder communication, delivery coordination, and offshore or contractor support.",
+  },
+  {
+    title: "SEO & Analytics",
+    detail: "GA4, GTM, CRO, measurement quality, and technical SEO support.",
+  },
+];
+
 const skills = [
   {
-    category: "Languages and Frameworks",
+    category: "Languages & Frameworks",
     items: [
       "PHP",
       "JavaScript",
@@ -60,15 +79,15 @@ const skills = [
     ],
   },
   {
-    category: "Tools and Platforms",
+    category: "Platforms & CMS",
     items: ["WordPress", "Git/GitHub", "Divi", "Elementor", "WPBakery", "WPEngine", "Flywheel"],
   },
   {
-    category: "Design and Development",
+    category: "Tools & Design",
     items: ["Figma", "Adobe XD", "Visual Studio Code", "Flexbox/CSS Grid", "A/B Testing"],
   },
   {
-    category: "Server Management",
+    category: "Hosting & Infrastructure",
     items: ["DNS", "cPanel/WHM", "Pantheon", "WPEngine", "Local by Flywheel", "Hostinger", "Caching", "Uptime"],
   },
   {
@@ -365,12 +384,52 @@ export default function Home() {
 
             <article className={`content-panel ${activeSection === "resume" ? "is-active" : ""}`} id="resume">
               <div className="panel-inner">
-                <p className="panel-eyebrow">Resume</p>
-                <h2>Experience, range, and core strengths.</h2>
+                <div className="resume-header">
+                  <div>
+                    <p className="panel-eyebrow">Resume</p>
+                    <h2>Experience, strengths, and supporting skill depth.</h2>
+                  </div>
+                  <a
+                    className="button-secondary resume-pdf-button"
+                    href="/Erick-Landaverry-Resume-2025.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View PDF Resume
+                  </a>
+                </div>
 
-                <div className="resume-layout">
-                  <section className="resume-column">
-                    <h3>Experience</h3>
+                <div className="resume-stack">
+                  <section className="resume-block">
+                    <div className="resume-block-header">
+                      <h3>Core Competencies & Technical Skills</h3>
+                    </div>
+
+                    <div className="competency-list">
+                      {coreCompetencies.map((item) => (
+                        <article className="competency-card" key={item.title}>
+                          <p>
+                            <strong>{item.title}:</strong> {item.detail}
+                          </p>
+                        </article>
+                      ))}
+                    </div>
+
+                    <div className="skill-category-list">
+                      {skills.map((skill) => (
+                        <article className="skill-category-card" key={skill.category}>
+                          <p>
+                            <strong>{skill.category}:</strong> {skill.items.join(", ")}
+                          </p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+
+                  <section className="resume-block">
+                    <div className="resume-block-header">
+                      <h3>Professional Experience</h3>
+                    </div>
                     <div className="timeline-list">
                       {experience.map((item) => (
                         <article className="timeline-item" key={item.role}>
@@ -380,19 +439,6 @@ export default function Home() {
                             <p className="timeline-company">{item.company}</p>
                             <p>{item.summary}</p>
                           </div>
-                        </article>
-                      ))}
-                    </div>
-                  </section>
-
-                  <section className="resume-column">
-                    <h3>Skills</h3>
-                    <div className="skill-category-list">
-                      {skills.map((skill) => (
-                        <article className="skill-category-card" key={skill.category}>
-                          <p>
-                            <strong>{skill.category}:</strong> {skill.items.join(", ")}
-                          </p>
                         </article>
                       ))}
                     </div>
