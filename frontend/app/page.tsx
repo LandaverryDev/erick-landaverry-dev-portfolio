@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 type SectionId =
   | "home"
   | "about"
-  | "resume"
+  | "skills"
+  | "experience"
   | "projects"
   | "testimonials"
   | "contact";
@@ -13,7 +14,8 @@ type SectionId =
 const sections: Array<{ id: SectionId; label: string }> = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "resume", label: "Resume" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "testimonials", label: "Testimonials" },
   { id: "contact", label: "Contact" },
@@ -382,12 +384,52 @@ export default function Home() {
               </div>
             </article>
 
-            <article className={`content-panel ${activeSection === "resume" ? "is-active" : ""}`} id="resume">
+            <article className={`content-panel ${activeSection === "skills" ? "is-active" : ""}`} id="skills">
+              <div className="panel-inner">
+                <p className="panel-eyebrow">Skills</p>
+                <h2>Core competencies and technical depth.</h2>
+
+                <div className="resume-stack">
+                  <section className="resume-block">
+                    <div className="resume-block-header">
+                      <h3>Core Competencies</h3>
+                    </div>
+
+                    <div className="competency-list">
+                      {coreCompetencies.map((item) => (
+                        <article className="competency-card" key={item.title}>
+                          <p>
+                            <strong>{item.title}:</strong> {item.detail}
+                          </p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+
+                  <section className="resume-block">
+                    <div className="resume-block-header">
+                      <h3>Technical Skills</h3>
+                    </div>
+                    <div className="skill-category-list">
+                      {skills.map((skill) => (
+                        <article className="skill-category-card" key={skill.category}>
+                          <p>
+                            <strong>{skill.category}:</strong> {skill.items.join(", ")}
+                          </p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article className={`content-panel ${activeSection === "experience" ? "is-active" : ""}`} id="experience">
               <div className="panel-inner">
                 <div className="resume-header">
                   <div>
-                    <p className="panel-eyebrow">Resume</p>
-                    <h2>Experience, strengths, and supporting skill depth.</h2>
+                    <p className="panel-eyebrow">Experience</p>
+                    <h2>Past roles and delivery scope.</h2>
                   </div>
                   <a
                     className="button-secondary resume-pdf-button"
@@ -400,32 +442,6 @@ export default function Home() {
                 </div>
 
                 <div className="resume-stack">
-                  <section className="resume-block">
-                    <div className="resume-block-header">
-                      <h3>Core Competencies & Technical Skills</h3>
-                    </div>
-
-                    <div className="competency-list">
-                      {coreCompetencies.map((item) => (
-                        <article className="competency-card" key={item.title}>
-                          <p>
-                            <strong>{item.title}:</strong> {item.detail}
-                          </p>
-                        </article>
-                      ))}
-                    </div>
-
-                    <div className="skill-category-list">
-                      {skills.map((skill) => (
-                        <article className="skill-category-card" key={skill.category}>
-                          <p>
-                            <strong>{skill.category}:</strong> {skill.items.join(", ")}
-                          </p>
-                        </article>
-                      ))}
-                    </div>
-                  </section>
-
                   <section className="resume-block">
                     <div className="resume-block-header">
                       <h3>Professional Experience</h3>
