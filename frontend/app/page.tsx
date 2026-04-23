@@ -364,10 +364,6 @@ export default function Home() {
                 </div>
 
                 <div className="about-footer">
-                  <p>
-                    I bring a balance of technical depth and strategic thinking, with a focus on building
-                    websites that are fast, complete, measurable, and built to grow.
-                  </p>
                   <button className="button-secondary" type="button" onClick={() => handleSectionChange("projects")}>
                     View my work
                   </button>
