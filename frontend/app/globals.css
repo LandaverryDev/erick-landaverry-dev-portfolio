@@ -823,8 +823,11 @@ textarea {
   margin-top: 1.35rem;
 }
 
-.skills-layout {
+.skills-grid {
+  display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  margin-top: 1.35rem;
   align-items: start;
 }
 
@@ -1141,7 +1144,7 @@ textarea {
     align-items: stretch;
   }
 
-  .skills-layout {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
