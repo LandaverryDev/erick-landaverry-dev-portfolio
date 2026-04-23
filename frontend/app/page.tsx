@@ -43,12 +43,6 @@ const experience = [
   },
 ];
 
-const education = [
-  "Hands-on delivery across in-house, agency, and enterprise environments",
-  "Practical platform leadership across strategy, code, and operations",
-  "Strong CMS, analytics, compliance, and launch support experience",
-];
-
 const skills = [
   {
     category: "Languages and Frameworks",
@@ -392,15 +386,6 @@ export default function Home() {
                   </section>
 
                   <section className="resume-column">
-                    <h3>Highlights</h3>
-                    <div className="highlight-list">
-                      {education.map((item) => (
-                        <article className="highlight-card" key={item}>
-                          <p>{item}</p>
-                        </article>
-                      ))}
-                    </div>
-
                     <h3>Skills</h3>
                     <div className="skill-category-list">
                       {skills.map((skill) => (

@@ -789,14 +789,12 @@ textarea {
 }
 
 .service-grid,
-.highlight-list,
 .testimonial-list {
   display: grid;
   gap: 1rem;
 }
 
 .service-card,
-.highlight-card,
 .testimonial-card {
   padding: 1.2rem;
 }
@@ -829,21 +827,25 @@ textarea {
   color: #9edfff;
 }
 
-.highlight-card p {
-  margin: 0;
-}
-
 .skill-category-card {
-  padding: 1rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 1.05rem 1.15rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1.15rem;
-  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at top right, rgba(32, 164, 243, 0.12), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent),
+    rgba(7, 16, 27, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 16px 34px rgba(0, 0, 0, 0.18);
 }
 
 .skill-category-card p {
   margin: 0;
   color: var(--text-soft);
-  line-height: 1.7;
+  line-height: 1.78;
 }
 
 .skill-category-card strong {
