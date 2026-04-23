@@ -825,10 +825,14 @@ textarea {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.35rem;
   align-items: start;
+}
+
+.skills-grid > .resume-block {
+  min-width: 0;
 }
 
 .resume-block {
@@ -1144,10 +1148,6 @@ textarea {
     align-items: stretch;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   .resume-pdf-button {
     width: fit-content;
     margin-top: 0;
@@ -1165,5 +1165,11 @@ textarea {
 
   .content-panel {
     border-radius: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
