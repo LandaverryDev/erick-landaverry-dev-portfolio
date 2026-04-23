@@ -329,11 +329,6 @@ export default function Home() {
                       refinement. Lord of the Rings and golf both reflect that for me in different ways.
                     </div>
 
-                    <div className="about-traits">
-                      {aboutPrinciples.map((item) => (
-                        <span key={item.title}>{item.title}</span>
-                      ))}
-                    </div>
                   </section>
 
                   <section className="about-card about-card-list">
